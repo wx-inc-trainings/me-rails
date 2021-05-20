@@ -6,8 +6,8 @@ services:
   - postgresql
 
 before_install:
-  - echo -e "machine github.com\n  login $GITHUB_TOKEN" > ~/.netrc
-  - git lfs pull
+  #- echo -e "machine github.com\n  login $GITHUB_TOKEN" > ~/.netrc
+  #- git lfs pull
   #- "echo '--colour' > ~/.rspec"
   #- "echo 'gem: --no-document' > ~/.gemrc"
   # Solves rainbow issue: https://github.com/sickill/rainbow/issues/48
