@@ -1,11 +1,6 @@
-# README
+# PROYECTO TRAINING CON RUBY ON RAILS [![Build Status](https://travis-ci.com/wx-inc-trainings/me-rails.svg?branch=kickoff-api)](https://travis-ci.com/wx-inc-trainings/me-rails)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
+* Rubocop: opcion -R no existe. Por lo tanto ejecute bundle exec rubocop app spec -A para realizar la correcion. Spec no existe, por lo tanto he creado su carpeta para solucionar los errores.
 
 * System dependencies
 
