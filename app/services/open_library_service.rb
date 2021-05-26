@@ -3,10 +3,9 @@
 class OpenLibraryService
   require 'HTTParty'
 
-  BASE_URI = OPEN_LIBRARY["base_uri"]
+  BASE_URI = OPEN_LIBRARY['base_uri']
 
   def self.get_library(isbn)
-
     response = request_to_open_library(isbn)
     if response.empty?
       { status?: :bad_request, result: { message: 'Book not found' } }
