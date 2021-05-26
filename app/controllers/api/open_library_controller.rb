@@ -3,7 +3,7 @@
 module Api
   class OpenLibraryController < ApplicationController
     def show
-      @book = OpenLibraryService.get_library(params[:ISBN])
+      @book = OpenLibraryService.new(params[:isbn]).get_library
       render json: @book[:result], status: @book[:status?]
     end
   end
