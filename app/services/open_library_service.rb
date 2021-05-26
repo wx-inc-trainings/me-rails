@@ -9,7 +9,7 @@ class OpenLibraryService
     @isbn = isbn
   end
 
-  def get_library
+  def book_info
     response = request_to_open_library
     if response.empty?
       { status?: :bad_request, result: { message: 'Book not found' } }
@@ -19,21 +19,23 @@ class OpenLibraryService
   end
 
   private
-    def request_to_open_library
-      query = {
-        bibkeys: @isbn,
-        format: 'json',
-        jscmd: 'data'
-      }
-      HTTParty.get(BASE_URI, query: query)
-    end
-    def format_answer_book(response)
-      {
-        ISBN: @isbn,
-        title: response.parsed_response[@isbn]['title'],
-        subtitle: response.parsed_response[@isbn]['subtitle'],
-        number_of_pages: response.parsed_response[@isbn]['number_of_pages'],
-        authors: response.parsed_response[@isbn]['authors']
-      }
-    end
+
+  def request_to_open_library
+    query = {
+      bibkeys: @isbn,
+      format: 'json',
+      jscmd: 'data'
+    }
+    HTTParty.get(BASE_URI, query: query)
+  end
+
+  def format_answer_book(response)
+    {
+      ISBN: @isbn,
+      title: response.parsed_response[@isbn]['title'],
+      subtitle: response.parsed_response[@isbn]['subtitle'],
+      number_of_pages: response.parsed_response[@isbn]['number_of_pages'],
+      authors: response.parsed_response[@isbn]['authors']
+    }
+  end
 end
