@@ -3,7 +3,7 @@
 class OpenLibraryService
   require 'HTTParty'
 
-  BASE_URI = OPEN_LIBRARY['base_uri']
+  BASE_URI = Rails.application.credentials.config[:api_open_library][:base_uri]
 
   def initialize(isbn)
     @isbn = isbn
