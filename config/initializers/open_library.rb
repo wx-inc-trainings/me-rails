@@ -1,0 +1,1 @@
+OPEN_LIBRARY = YAML.load_file("#{::Rails.root}/config/open_library.yml")[::Rails.env]

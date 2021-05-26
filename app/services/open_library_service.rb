@@ -3,7 +3,7 @@
 class OpenLibraryService
   require 'HTTParty'
 
-  BASE_URI = 'https://openlibrary.org/api/books'
+  BASE_URI = OPEN_LIBRARY["base_uri"]
 
   def self.get_library(isbn)
 
