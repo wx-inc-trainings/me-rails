@@ -81,6 +81,10 @@ GEM
     crass (1.0.6)
     erubi (1.10.0)
     ffi (1.15.1)
+    fictium (0.4.1)
+      activesupport (>= 5.1, < 6.2)
+      json-schema (~> 2.8)
+      verbs (~> 2.1.4)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     httparty (0.18.1)
@@ -90,6 +94,8 @@ GEM
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.2)
       activesupport (>= 5.0.0)
+    json-schema (2.8.1)
+      addressable (>= 2.4)
     listen (3.5.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -201,6 +207,9 @@ GEM
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.0.0)
+    verbs (2.1.4)
+      activesupport (>= 2.3.4)
+      i18n
     web-console (4.1.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -229,6 +238,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
   capybara (>= 3.26)
+  fictium
   httparty
   jbuilder (~> 2.7)
   listen (~> 3.3)
