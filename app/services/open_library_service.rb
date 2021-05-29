@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class OpenLibraryService
-  require 'HTTParty'
+  require 'httparty'
 
   BASE_URI = Rails.application.credentials.config[:api_open_library][:base_uri]
 
@@ -12,7 +12,7 @@ class OpenLibraryService
   def book_info
     response = request_to_open_library
     if response.empty?
-      { status?: :bad_request, result: { message: 'Book not found' } }
+      { status?: :not_found, result: { message: 'Book not found' } }
     else
       { status?: :ok, result: format_answer_book(response) }
     end
@@ -30,12 +30,13 @@ class OpenLibraryService
   end
 
   def format_answer_book(response)
+    book = response.parsed_response[@isbn]
     {
       ISBN: @isbn,
-      title: response.parsed_response[@isbn]['title'],
-      subtitle: response.parsed_response[@isbn]['subtitle'],
-      number_of_pages: response.parsed_response[@isbn]['number_of_pages'],
-      authors: response.parsed_response[@isbn]['authors']
+      title: book['title'],
+      subtitle: book['subtitle'],
+      number_of_pages: book['number_of_pages'],
+      authors: book['authors']
     }
   end
 end
