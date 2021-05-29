@@ -23,5 +23,6 @@ before_script:
 
 script:
   - bundle exec rubocop app spec
+  - bundle exec rspec
 
 #Intento 4
