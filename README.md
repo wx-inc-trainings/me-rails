@@ -2,14 +2,5 @@
 
 * (2) Integración API Externa 
 
-* Database creation
+* Card: (2) Crear modelo de User + implementar autenticación
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
