@@ -1,7 +1,5 @@
-# frozen_string_literal: true
-
 class OpenLibraryService
-  require 'HTTParty'
+  require 'httparty'
 
   BASE_URI = Rails.application.credentials.config[:api_open_library][:base_uri]
 

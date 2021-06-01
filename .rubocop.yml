@@ -4,4 +4,7 @@ LineLength:
   Max: 99
 Style/FrozenStringLiteralComment:
   Enabled: false
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*.rb'
 
