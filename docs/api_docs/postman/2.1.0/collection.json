@@ -16,9 +16,9 @@
           "description": null,
           "request": {
             "url": {
-              "raw": "https://localhost:3000//api/open_library",
+              "raw": "http://localhost:3000/api/open_library",
               "host": [
-                "https://localhost:3000/"
+                "http://localhost:3000"
               ],
               "path": [
                 "api",
@@ -41,9 +41,9 @@
             {
               "originalRequest": {
                 "url": {
-                  "raw": "https://localhost:3000//api/open_library",
+                  "raw": "http://localhost:3000/api/open_library",
                   "host": [
-                    "https://localhost:3000/"
+                    "http://localhost:3000"
                   ],
                   "path": [
                     "api",
@@ -77,9 +77,9 @@
             {
               "originalRequest": {
                 "url": {
-                  "raw": "https://localhost:3000//api/open_library",
+                  "raw": "http://localhost:3000/api/open_library",
                   "host": [
-                    "https://localhost:3000/"
+                    "http://localhost:3000"
                   ],
                   "path": [
                     "api",
