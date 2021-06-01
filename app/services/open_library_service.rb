@@ -1,6 +1,5 @@
-# frozen_string_literal: true
-
 class OpenLibraryService
+
   require 'httparty'
 
   BASE_URI = Rails.application.credentials.config[:api_open_library][:base_uri]
@@ -11,11 +10,10 @@ class OpenLibraryService
 
   def book_info
     response = request_to_open_library
-    if response.empty?
-      { status?: :not_found, result: { message: 'Book not found' } }
-    else
-      { status?: :ok, result: format_answer_book(response) }
-    end
+
+    return { status?: :not_found, result: { message: 'Book not found' } } if response.empty?
+
+    { status?: :ok, result: format_answer_book(response) }
   end
 
   private
