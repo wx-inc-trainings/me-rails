@@ -64,6 +64,8 @@ group :development, :test do
   gem 'json'
 
   gem 'fictium'
+
+  gem 'byebug'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
