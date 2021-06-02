@@ -32,5 +32,5 @@ Handles api open_library.
   + Body
 
       ```
-      {"message":"Book not found"}
+      {"status":404,"errors":[{"code":"001","message":"Book not found"},{"code":"002","message":"ISBN cannot be alphabetic"}]}
       ```

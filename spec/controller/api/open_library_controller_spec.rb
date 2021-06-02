@@ -37,13 +37,20 @@ RSpec.describe Api::OpenLibraryController, type: :controller do
       describe example 'with invalid value' do
         let(:isbn) { 'a' }
 
+        let(:list_code_errors) do
+          file = File.read('./spec/support/features/list_code_errors.json')
+          JSON.parse(file)
+        end
+
         it 'status code 404' do
           expect(response).to have_http_status 404
         end
 
         it 'show message error' do
-          message = JSON.parse(response.body)['message']
-          expect(message).to eql 'Book not found'
+          errors = JSON.parse(response.body)["errors"]
+          errors.each do |error|
+            expect(error["message"]).to eql list_code_errors[error["code"]]
+          end
         end
       end
     end

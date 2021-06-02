@@ -102,7 +102,7 @@
               "status": "[404] with invalid value {}",
               "name": "[404] with invalid value {}",
               "code": 404,
-              "body": "{\"message\":\"Book not found\"}",
+              "body": "{\"status\":404,\"errors\":[{\"code\":\"001\",\"message\":\"Book not found\"},{\"code\":\"002\",\"message\":\"ISBN cannot be alphabetic\"}]}",
               "header": [
                 {
                   "key": "Content-Type",

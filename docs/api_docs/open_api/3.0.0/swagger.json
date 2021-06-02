@@ -29,7 +29,7 @@
             "description": "with invalid value {}",
             "content": {
               "application/json": {
-                "example": "{\"message\":\"Book not found\"}"
+                "example": "{\"status\":404,\"errors\":[{\"code\":\"001\",\"message\":\"Book not found\"},{\"code\":\"002\",\"message\":\"ISBN cannot be alphabetic\"}]}"
               }
             }
           }

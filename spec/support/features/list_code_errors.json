@@ -1,0 +1,5 @@
+{
+    "001": "Book not found",
+    "002": "ISBN cannot be alphabetic",
+    "003": "ISBN does not exist or cannot be found"
+}

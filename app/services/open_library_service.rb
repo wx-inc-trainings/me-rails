@@ -10,7 +10,7 @@ class OpenLibraryService
   def book_info
     response = request_to_open_library
 
-    return { status?: :not_found, result: { message: 'Book not found' } } if response.empty?
+    return { status?: :not_found, result:  OpenLibraryError.new(@isbn).info_error } if response.empty?
 
     { status?: :ok, result: format_answer_book(response) }
   end
@@ -30,10 +30,6 @@ class OpenLibraryService
     book = response.parsed_response[@isbn]
     {
       ISBN: @isbn,
-      title: book['title'],
-      subtitle: book['subtitle'],
-      number_of_pages: book['number_of_pages'],
-      authors: book['authors']
-    }
+    }.merge(book.slice("title", "subtitle", "number_of_pages", "authors"))
   end
 end
