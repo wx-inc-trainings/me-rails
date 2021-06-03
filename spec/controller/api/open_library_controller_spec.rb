@@ -47,9 +47,9 @@ RSpec.describe Api::OpenLibraryController, type: :controller do
         end
 
         it 'show message error' do
-          errors = JSON.parse(response.body)["errors"]
+          errors = JSON.parse(response.body)['errors']
           errors.each do |error|
-            expect(error["message"]).to eql list_code_errors[error["code"]]
+            expect(error['message']).to eql list_code_errors[error['code']]
           end
         end
       end
