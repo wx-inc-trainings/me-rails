@@ -22,6 +22,8 @@ before_script:
   #- bundle exec rake db:setup
 
 script:
+  - rake db:migrate RAILS_ENV=test
   - bundle exec rubocop app spec
+  - bundle exec rspec
 
 #Intento 4
