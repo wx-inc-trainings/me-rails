@@ -5,15 +5,15 @@ RSpec.describe Api::OpenLibraryController, type: :controller do
   describe action 'GET #show' do
     before(:each) { get :show, params: { isbn: isbn }, format: :json }
 
-    let(:json_open_library_success) do
-      file = File.read('./spec/support/features/open_library_success.json')
+    let(:json_book_info_success) do
+      file = File.read('./spec/support/features/book_info_success.json')
       JSON.parse(file)
     end
 
     before do
-      @open_library = instance_double(OpenLibraryService)
-      allow(@open_library).to receive(:book_info).and_return(json_open_library_success)
-      allow(OpenLibraryService).to receive(:new).and_return(@open_library)
+      @book_info_success = instance_double(OpenLibraryService)
+      allow(@book_info_success).to receive(:book_info).and_return(json_book_info_success)
+      allow(OpenLibraryService).to receive(:new).and_return(@book_info_success)
     end
 
     context 'Get book info' do
@@ -25,7 +25,8 @@ RSpec.describe Api::OpenLibraryController, type: :controller do
         end
 
         it 'show book info' do
-          book = @open_library.book_info
+          book = @book_info_success.book_info
+
           current_book = JSON.parse(response.body)
 
           current_book.each do |key, info|

@@ -1,0 +1,125 @@
+{
+    "ISBN:2": {
+        "url": "http://openlibrary.org/books/OL31366669M/Pragmatic_Realism_Religious_Truth_and_Antitheodicy",
+        "key": "/books/OL31366669M",
+        "title": "Pragmatic Realism, Religious Truth, and Antitheodicy",
+        "subtitle": "On Viewing the World by Acknowledging the Other",
+        "authors": [
+            {
+            "url": "http://openlibrary.org/authors/OL5422937A/Sami_Pihlström",
+            "name": "Sami Pihlström"
+            }
+        ],
+        "number_of_pages": 223,
+        "pagination": "1 electronic resource (223 p.)",
+        "identifiers": {
+        "isbn_10": [
+            "2"
+        ],
+        "isbn_13": [
+            "9789523690042"
+        ],
+        "openlibrary": [
+            "OL31366669M"
+        ]
+        },
+        "publishers": [
+            {
+                "name": "Helsinki University Press"
+            }
+        ],
+        "publish_places": [
+            {
+                "name": "Helsinki"
+            }
+        ],
+        "publish_date": "2020",
+        "subjects": [
+            {
+                "name": "Western philosophy, from c 1900 -",
+                "url": "https://openlibrary.org/subjects/western_philosophy,_from_c_1900_-"
+            },
+            {
+                "name": "Philosophy of religion",
+                "url": "https://openlibrary.org/subjects/philosophy_of_religion"
+            },
+            {
+                "name": "Philosophy: metaphysics & ontology",
+                "url": "https://openlibrary.org/subjects/philosophy:_metaphysics_&_ontology"
+            },
+            {
+                "name": "Ethics & moral philosophy",
+                "url": "https://openlibrary.org/subjects/ethics_&_moral_philosophy"
+            },
+            {
+                "name": "Popular beliefs & controversial knowledge",
+                "url": "https://openlibrary.org/subjects/popular_beliefs_&_controversial_knowledge"
+            },
+            {
+                "name": "Political structures: democracy",
+                "url": "https://openlibrary.org/subjects/political_structures:_democracy"
+            },
+            {
+                "name": "Social & cultural history",
+                "url": "https://openlibrary.org/subjects/social_&_cultural_history"
+            },
+            {
+                "name": "Conspiracy theories",
+                "url": "https://openlibrary.org/subjects/conspiracy_theories"
+            },
+            {
+                "name": "Society & culture: general",
+                "url": "https://openlibrary.org/subjects/society_&_culture:_general"
+            },
+            {
+                "name": "Politics & government",
+                "url": "https://openlibrary.org/subjects/politics_&_government"
+            },
+            {
+                "name": "Medicine",
+                "url": "https://openlibrary.org/subjects/medicine"
+            },
+            {
+                "name": "Health & personal development",
+                "url": "https://openlibrary.org/subjects/health_&_personal_development"
+            },
+            {
+                "name": "Biography & True Stories",
+                "url": "https://openlibrary.org/subjects/biography_&_true_stories"
+            },
+            {
+                "name": "The arts",
+                "url": "https://openlibrary.org/subjects/the_arts"
+            },
+            {
+                "name": "Humanities",
+                "url": "https://openlibrary.org/subjects/humanities"
+            },
+            {
+                "name": "Waste treatment & disposal",
+                "url": "https://openlibrary.org/subjects/waste_treatment_&_disposal"
+            },
+            {
+                "name": "History of religion",
+                "url": "https://openlibrary.org/subjects/history_of_religion"
+            },
+            {
+                "name": "European history",
+                "url": "https://openlibrary.org/subjects/european_history"
+            },
+            {
+                "name": "Medieval history",
+                "url": "https://openlibrary.org/subjects/medieval_history"
+            },
+            {
+                "name": "Christianity",
+                "url": "https://openlibrary.org/subjects/christianity"
+            },
+            {
+                "name": "Poetry by individual poets",
+                "url": "https://openlibrary.org/subjects/poetry_by_individual_poets"
+            }
+        ],
+        "notes": "Open Access Unrestricted online access\n\nCreative Commons by/4.0/\n\nEnglish"
+    }
+}
