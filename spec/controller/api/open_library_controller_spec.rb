@@ -25,7 +25,9 @@ RSpec.describe Api::OpenLibraryController, type: :controller do
         end
 
         it 'show book info' do
+
           book = @book_info_success.book_info
+
           current_book = JSON.parse(response.body)
 
           current_book.each do |key, info|
