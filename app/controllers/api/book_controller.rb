@@ -1,9 +1,11 @@
 class Api::BookController < ApplicationController
+  include Wor::Paginate
   def index
-    book = Book.all
-    render json: Panko::ArraySerializer.new(book, each_serializer: BookSerializer).to_json
+    render_paginated Book, each_serializer: BookSerializer
   end
 
   def show
+    book = Book.find(params[:id])
+    render json: BookSerializer.new.serialize(book).to_json
   end
 end
