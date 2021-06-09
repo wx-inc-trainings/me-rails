@@ -1,9 +1,8 @@
 class Book < ApplicationRecord
-  validates_presence_of :genre, :image, :author, :title, :editor, :year
+  validates :image, :title, :editor, presence: true
 
-  validates_format_of :year, with: /\A\d+\z/
+  validates :year, numericality: { only_integer: true }, length: { is: 4 }, presence: true
 
-  validates_length_of :year, maximum: 4
   validates :author, :genre, format: { with: /\A[a-zA-Z]+\W?(\s?|[a-zA-Z]+\W?)*\z/ },
                              presence: true
 end
