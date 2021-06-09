@@ -92,7 +92,7 @@ group :development, :test do
 
   gem 'fictium'
 
-  gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
+  gem 'faker'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

@@ -1,11 +1,3 @@
-GIT
-  remote: https://github.com/faker-ruby/faker.git
-  revision: 8e8ae220eadaa0c036999b7711106b1a84c372d9
-  branch: master
-  specs:
-    faker (2.18.0)
-      i18n (>= 1.6, < 2)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -113,6 +105,8 @@ GEM
     factory_bot_rails (6.2.0)
       factory_bot (~> 6.2.0)
       railties (>= 5.0.0)
+    faker (2.18.0)
+      i18n (>= 1.6, < 2)
     ffi (1.15.1)
     fictium (0.4.1)
       activesupport (>= 5.1, < 6.2)
@@ -307,7 +301,7 @@ DEPENDENCIES
   database_cleaner
   devise_token_auth
   factory_bot_rails
-  faker!
+  faker
   fictium
   httparty
   jbuilder (~> 2.7)
