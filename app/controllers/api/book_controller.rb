@@ -10,5 +10,6 @@ module Api
       book = Book.find(params[:id])
       render json: BookSerializer.new.serialize(book).to_json
     end
+
   end
 end

@@ -1,10 +1,22 @@
 Documentation:
   Enabled: false
+
 LineLength:
   Max: 99
+
 Style/FrozenStringLiteralComment:
   Enabled: false
+
 Metrics/BlockLength:
   Exclude:
     - 'spec/**/*.rb'
 
+#require:
+  #- rubocop-rails
+  #- rubocop-rspec
+
+Naming/VariableNumber:
+  EnforcedStyle: snake_case
+
+Layout/EmptyLinesAroundClassBody:
+  EnforcedStyle: ending_only

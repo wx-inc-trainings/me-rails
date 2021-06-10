@@ -60,6 +60,10 @@ group :development do
   gem 'listen', '~> 3.3'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  gem 'rubocop-rails', require: false
+
+  gem 'rubocop-rspec', require: false
 end
 
 group :test do
@@ -79,17 +83,6 @@ group :test do
   gem "webmock"
 end
 
-
-group :development, :test do 
-  gem 'rspec-rails', '~> 5.0.0'
-  
-  gem 'json'
-
-  gem 'fictium'
-
-  gem 'byebug'
-
-end
 
 group :development, :test do 
   gem 'rspec-rails', '~> 5.0.0'
