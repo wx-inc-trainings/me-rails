@@ -1,3 +1,5 @@
+require 'faker'
+
 FactoryBot.define do
   factory :book do
     genre { Faker::Book.genre }
