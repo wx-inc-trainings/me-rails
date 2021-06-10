@@ -8,3 +8,5 @@ Metrics/BlockLength:
   Exclude:
     - 'spec/**/*.rb'
 
+Layout/EmptyLinesAroundClassBody:
+  EnforcedStyle: ending_only

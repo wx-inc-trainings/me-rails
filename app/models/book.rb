@@ -5,4 +5,5 @@ class Book < ApplicationRecord
 
   validates :author, :genre, format: { with: /\A[a-zA-Z]+\W?(\s?|[a-zA-Z]+\W?)*\z/ },
                              presence: true
+
 end
