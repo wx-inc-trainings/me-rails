@@ -28,10 +28,5 @@ module MeRails
         methods: [:get, :post, :options, :delete, :put, :patch]
       end
     end
-
-    Wor::Paginate.configure do |config|
-      config.formatter = Wor::Paginate::Formatters::PankoFormatter
-    end
-    
   end
 end
