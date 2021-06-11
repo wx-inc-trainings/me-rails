@@ -19,7 +19,7 @@ RSpec.describe Book, type: :model do
         attributes.each do |attribute|
           it "without #{attribute}" do
             book[attribute] = nil
-            expect(book).to_not be_valid
+            expect(book).not_to be_valid
           end
         end
       end
@@ -34,7 +34,7 @@ RSpec.describe Book, type: :model do
 
         it 'is not alphabetic' do
           book.author = 'Nro1'
-          expect(book).to_not be_valid
+          expect(book).not_to be_valid
         end
       end
 
@@ -46,7 +46,7 @@ RSpec.describe Book, type: :model do
 
         it 'is not alphabetic' do
           book.genre = 'Nro2'
-          expect(book).to_not be_valid
+          expect(book).not_to be_valid
         end
       end
 
@@ -58,12 +58,12 @@ RSpec.describe Book, type: :model do
 
         it 'is numeric and length > 4' do
           book.year = '20001'
-          expect(book).to_not be_valid
+          expect(book).not_to be_valid
         end
 
         it 'is not numeric' do
           book.year = 'Nro3'
-          expect(book).to_not be_valid
+          expect(book).not_to be_valid
         end
       end
     end

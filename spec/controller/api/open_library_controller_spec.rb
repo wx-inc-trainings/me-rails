@@ -3,7 +3,7 @@ require 'json'
 
 RSpec.describe Api::OpenLibraryController, type: :controller do
   describe action 'GET #show' do
-    before(:each) { get :show, params: { isbn: isbn }, format: :json }
+    before { get :show, params: { isbn: isbn }, format: :json }
 
     let(:json_book_info_success) do
       file = File.read('./spec/support/features/book_info_success.json')
@@ -21,7 +21,7 @@ RSpec.describe Api::OpenLibraryController, type: :controller do
         let(:isbn) { 2 }
 
         it 'status code 200' do
-          expect(response).to have_http_status 200
+          expect(response).to have_http_status :ok
         end
 
         it 'show book info' do
@@ -44,7 +44,7 @@ RSpec.describe Api::OpenLibraryController, type: :controller do
         end
 
         it 'status code 404' do
-          expect(response).to have_http_status 404
+          expect(response).to have_http_status :not_found
         end
 
         it 'show message error' do
