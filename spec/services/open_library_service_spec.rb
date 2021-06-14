@@ -14,14 +14,14 @@ RSpec.describe OpenLibraryService, type: :service do
     end
 
     context 'with valid isbn' do
+      subject(:book_response) { described_class.new(isbn).book_info }
+
       let(:json_book_info_success) do
         file = File.read('./spec/support/features/book_info_success.json')
         JSON.parse(file)
       end
 
       let(:isbn) { '2' }
-
-      subject(:book_response) { described_class.new(isbn).book_info }
 
       before do
         open_library_request_success
@@ -49,14 +49,14 @@ RSpec.describe OpenLibraryService, type: :service do
     end
 
     context 'with invalid isbn' do
+      subject(:book_response) { described_class.new(isbn).book_info }
+
       let(:list_code_errors) do
         file = File.read('./spec/support/features/list_code_errors.json')
         JSON.parse(file)
       end
 
       let(:isbn) { 'abc' }
-
-      subject(:book_response) { described_class.new(isbn).book_info }
 
       before do
         open_library_request_not_success

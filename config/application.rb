@@ -28,6 +28,5 @@ module MeRails
         methods: [:get, :post, :options, :delete, :put, :patch]
       end
     end
-    
   end
 end

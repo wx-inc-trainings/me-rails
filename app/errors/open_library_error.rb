@@ -26,4 +26,5 @@ class OpenLibraryError
       { code: '003', message: 'ISBN does not exist or cannot be found' }
     end
   end
+
 end

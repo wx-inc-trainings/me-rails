@@ -35,4 +35,5 @@ class OpenLibraryService
       ISBN: @isbn
     }.merge(book.slice('title', 'subtitle', 'number_of_pages', 'authors'))
   end
+
 end

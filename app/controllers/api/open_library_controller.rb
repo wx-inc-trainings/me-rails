@@ -4,5 +4,6 @@ module Api
       @book = OpenLibraryService.new(params[:isbn]).book_info
       render json: @book[:result], status: @book[:status?]
     end
+
   end
 end
