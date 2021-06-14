@@ -1,10 +1,15 @@
 Documentation:
   Enabled: false
+
 LineLength:
   Max: 99
+
 Style/FrozenStringLiteralComment:
   Enabled: false
+
 Metrics/BlockLength:
   Exclude:
     - 'spec/**/*.rb'
 
+Layout/EmptyLinesAroundClassBody:
+  EnforcedStyle: ending_only

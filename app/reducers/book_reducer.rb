@@ -6,4 +6,5 @@ class BookReducer < Rack::Reducer
         ->(title:) { where('lower(title) like ?', "%#{title.downcase}%") }
     )
   end
+
 end
