@@ -3,17 +3,17 @@ require 'json'
 
 RSpec.describe Api::OpenLibraryController, type: :controller do
   describe action 'GET #show' do
-    before(:each) { get :show, params: { isbn: isbn }, format: :json }
+    before { get :show, params: { isbn: isbn }, format: :json }
 
-    let(:json_open_library_success) do
-      file = File.read('./spec/support/features/open_library_success.json')
+    let(:json_book_info_success) do
+      file = File.read('./spec/support/features/book_info_success.json')
       JSON.parse(file)
     end
 
     before do
-      @open_library = instance_double(OpenLibraryService)
-      allow(@open_library).to receive(:book_info).and_return(json_open_library_success)
-      allow(OpenLibraryService).to receive(:new).and_return(@open_library)
+      @book_info_success = instance_double(OpenLibraryService)
+      allow(@book_info_success).to receive(:book_info).and_return(json_book_info_success)
+      allow(OpenLibraryService).to receive(:new).and_return(@book_info_success)
     end
 
     context 'Get book info' do
@@ -21,11 +21,12 @@ RSpec.describe Api::OpenLibraryController, type: :controller do
         let(:isbn) { 2 }
 
         it 'status code 200' do
-          expect(response).to have_http_status 200
+          expect(response).to have_http_status :ok
         end
 
         it 'show book info' do
-          book = @open_library.book_info
+          book = @book_info_success.book_info
+
           current_book = JSON.parse(response.body)
 
           current_book.each do |key, info|
@@ -43,7 +44,7 @@ RSpec.describe Api::OpenLibraryController, type: :controller do
         end
 
         it 'status code 404' do
-          expect(response).to have_http_status 404
+          expect(response).to have_http_status :not_found
         end
 
         it 'show message error' do
