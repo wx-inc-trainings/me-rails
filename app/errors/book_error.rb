@@ -3,7 +3,7 @@ module BookError
     attr_reader :status, :code, :message
 
     def initialize(message = nil)
-      @status = :not_found
+      @status = 404
       @code = '001'
       @message = message || 'Book not found'
     end
