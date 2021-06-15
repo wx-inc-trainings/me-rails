@@ -19,6 +19,6 @@ module Api
       e = BookError::BookNotFound.new
       render json: Error::BookErrorSerializer.new.serialize(e), status: e.status
     end
-
+  
   end
 end
