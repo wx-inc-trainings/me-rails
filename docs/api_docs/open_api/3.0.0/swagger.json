@@ -6,6 +6,37 @@
     "version": "1"
   },
   "paths": {
+    "/api/book": {
+      "description": "",
+      "get": {
+        "tags": [
+
+        ],
+        "description": "Show details of a book.",
+        "parameters": [
+
+        ],
+        "responses": {
+          "default": {
+            "description": "with valid value {}",
+            "content": {
+              "application/json": {
+                "example": "{\"author\":\"Fr. Kris Wilkinson\",\"title\":\"The Monkey's Raincoat\",\"genre\":\"Comic/Graphic Novel\",\"editor\":\"HarperPrism\",\"year\":\"1903\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"the-monkey-s-raincoat\"}"
+              }
+            }
+          },
+          "404": {
+            "description": "with invalid value {}",
+            "content": {
+              "application/json": {
+                "example": "{\"error\":\"can't find record with friendly id: \\\"debitis-aut\\\"\"}"
+              }
+            }
+          }
+        },
+        "deprecated": false
+      }
+    },
     "/api/open_library": {
       "description": "",
       "get": {
