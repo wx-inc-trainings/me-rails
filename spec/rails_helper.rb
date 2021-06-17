@@ -7,6 +7,9 @@ abort('The Rails environment is running in production mode!') if Rails.env.produ
 require 'rspec/rails'
 require 'fictium/rspec'
 
+# spec/rails_helper.rb
+require 'wor/paginate/rspec'
+
 # Add additional requires below this line. Rails is not loaded until this point!
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
@@ -63,6 +66,9 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+
+  # Waden::Proxy solution
+  config.include Devise::Test::ControllerHelpers, type: :controller
 end
 
 Fictium.configure do |config|
