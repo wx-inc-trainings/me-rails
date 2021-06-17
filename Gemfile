@@ -40,13 +40,17 @@ gem 'devise_token_auth'
 # CORS
 gem 'rack-cors'
 
-# Serializer
+# Serializer/Formatter
 gem "panko_serializer"
 
 # Paginate
 gem 'wor-paginate'
 
+# Filter
 gem 'rack-reducer'
+
+# Slug
+gem 'friendly_id'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

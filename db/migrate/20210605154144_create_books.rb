@@ -7,7 +7,7 @@ class CreateBooks < ActiveRecord::Migration[6.1]
       t.string :title, null: false
       t.string :editor, null: false
       t.string :year, null: false
-
+      
       t.timestamps
     end
   end

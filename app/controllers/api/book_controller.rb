@@ -7,9 +7,9 @@ module Api
     end
 
     def show
-      book = Book.find(params[:id])
+      book = Book.friendly.find_by_friendly_id(params[:id])
       render json: BookSerializer.new.serialize(book).to_json
     end
-
+  
   end
 end
