@@ -38,13 +38,11 @@ Handles api book.
 + Response 200 (application/json)
  
   + Header
-
             access-token: ei227KTsUYSZmFXrObs_oQ
             token-type: Bearer
             client: Gx0o9G3Hr2myLBpXyVAuMg
             expiry: 1625598758
             uid: jamika.ebert@witting.biz
- 
   + Body
 
       ```
@@ -57,7 +55,6 @@ Handles api book.
 + Response 200 (application/json)
  
   + Header
-
             access-token: dJpMCoUI2uy4NKeTShh2_A
             token-type: Bearer
             client: 2tN-pkXzetSEiNag9brZGg
@@ -74,163 +71,6 @@ Handles api book.
 + Response 404 (application/json)
  
   + Body
-
-      ```
-      {"error":"can't find record with friendly id: \"ullam_doloremque\""}
-      ```
-
-
-# Book suggestions [/api/book_suggestion]
-Handles api book_suggestion.
-
-
-## Create a new book suggestion. [POST ]
-
-+ Request alone with valid parameters required {} 
- 
-  + Header
-
-            warden: Warden::Proxy:72480 @config={:default_scope=>:user, :scope_defaults=>{}, :default_strategies=>{:user=>[:rememberable, :database_authenticatable]}, :intercept_401=>false, :failure_app=>#<Devise::Delegator:0x00007fed52ead8b8>}
- 
-  + Body
-
-      ```
-      author=Rev.+Jennell+Jakubowski&editor=Carlton+Publishing+Group&link=http%3A%2F%2Fhermann.co%2Frusty&title=Pale+Kings+and+Princes&year=1409
-      ```
-
-
-+ Response 201 (application/json)
- 
-  + Body
-
-      ```
-      {"message":"Book Suggestion created"}
-      ```
-
-
-+ Request with valid authenticated user {} 
- 
-  + Header
-
-            warden: Warden::Proxy:72500 @config={:default_scope=>:user, :scope_defaults=>{}, :default_strategies=>{:user=>[:rememberable, :database_authenticatable]}, :intercept_401=>false, :failure_app=>#<Devise::Delegator:0x00007fed52ead8b8>}
-            ACCESS-TOKEN: P_Dg8Ub7r5MRxfC5poW1tA
-            TOKEN-TYPE: Bearer
-            CLIENT: isMRB2C3pO2uzIvG9uboQQ
-            EXPIRY: 1625598761
-            UID: zetta_mckenzie@kertzmann-medhurst.org
- 
-  + Body
-
-      ```
-      author=Jude+Parker&editor=Churchill+Livingstone&link=http%3A%2F%2Fdooley-veum.io%2Fvictor_walsh&title=To+a+God+Unknown&user_id=17&year=1464
-      ```
-
-
-+ Response 201 (application/json)
- 
-  + Body
-
-      ```
-      {"message":"Book Suggestion created"}
-      ```
-
-
-+ Request with valid price param {} 
- 
-  + Header
-
-            warden: Warden::Proxy:72520 @config={:default_scope=>:user, :scope_defaults=>{}, :default_strategies=>{:user=>[:rememberable, :database_authenticatable]}, :intercept_401=>false, :failure_app=>#<Devise::Delegator:0x00007fed52ead8b8>}
- 
-  + Body
-
-      ```
-      author=Adriene+Wuckert&editor=Shuter+%26+Shooter+Publishers&link=http%3A%2F%2Fstreich-grady.info%2Fjoey&price=33.86&title=Edna+O%27Brien&year=1544
-      ```
-
-
-+ Response 201 (application/json)
- 
-  + Body
-
-      ```
-      {"message":"Book Suggestion created"}
-      ```
-
-
-+ Request with valid synopsis param {} 
- 
-  + Header
-
-            warden: Warden::Proxy:72540 @config={:default_scope=>:user, :scope_defaults=>{}, :default_strategies=>{:user=>[:rememberable, :database_authenticatable]}, :intercept_401=>false, :failure_app=>#<Devise::Delegator:0x00007fed52ead8b8>}
- 
-  + Body
-
-      ```
-      author=Sommer+Haley&editor=George+Routledge+%26+Sons&link=http%3A%2F%2Forn.net%2Fasia&synopsis=Eveniet+ab+recusandae.+Labore+vero+sit.+Rem+voluptatum+eum.&title=Recalled+to+Life&year=1756
-      ```
-
-
-+ Response 201 (application/json)
- 
-  + Body
-
-      ```
-      {"message":"Book Suggestion created"}
-      ```
-
-
-+ Response 422 (application/json)
- 
-  + Body
-
-      ```
-      {"error":{"title":["can't be blank"],"editor":["can't be blank"],"link":["is invalid","can't be blank"],"year":["is not a number","is too short (minimum is 1 character)","can't be blank"],"author":["is invalid","can't be blank"]}}
-      ```
-
-
-+ Request with invalid param {} 
- 
-  + Header
-
-            warden: Warden::Proxy:72560 @config={:default_scope=>:user, :scope_defaults=>{}, :default_strategies=>{:user=>[:rememberable, :database_authenticatable]}, :intercept_401=>false, :failure_app=>#<Devise::Delegator:0x00007fed52ead8b8>}
- 
-  + Body
-
-      ```
-      lorem=lorem
-      ```
-
-
-+ Response 400 (application/json)
- 
-  + Body
-
-      ```
-      {"error":"found unpermitted parameter: :lorem"}
-      ```
-
-
-+ Request with invalid param user_id {} 
- 
-  + Header
-
-            warden: Warden::Proxy:72580 @config={:default_scope=>:user, :scope_defaults=>{}, :default_strategies=>{:user=>[:rememberable, :database_authenticatable]}, :intercept_401=>false, :failure_app=>#<Devise::Delegator:0x00007fed52ead8b8>}
- 
-  + Body
-
-      ```
-      user_id=a
-      ```
-
-
-+ Response 404 (application/json)
- 
-  + Body
-
-      ```
-      {"error":"Couldn't find User with 'id'=a"}
-      ```
-
 
 # Open libraries [/api/open_library]
 Handles api open_library.
