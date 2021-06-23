@@ -3,7 +3,7 @@ module Api
     def create
       User.find(params[:user_id]) if params[:user_id].present?
       BookSuggestion.create!(book_suggestion_params)
-      render json: { message: 'Book Suggestion created' }, status: :created
+      head :created
     end
 
     private
