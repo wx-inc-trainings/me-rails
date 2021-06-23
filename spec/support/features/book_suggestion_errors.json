@@ -1,0 +1,22 @@
+{
+    "error": {
+        "link": [
+            "can't be blank"
+        ],
+        "title": [
+            "can't be blank"
+        ],
+        "editor": [
+            "can't be blank"
+        ],
+        "year": [
+            "is not a number",
+            "is too short (minimum is 1 character)",
+            "can't be blank"
+        ],
+        "author": [
+            "is invalid",
+            "can't be blank"
+        ]
+    }
+}

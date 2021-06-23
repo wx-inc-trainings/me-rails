@@ -88,7 +88,7 @@
               "status": "[200] without filter {}",
               "name": "[200] without filter {}",
               "code": 200,
-              "body": "{\"page\":[{\"author\":\"Angelo Gerlach\",\"title\":\"When the Green Woods Laugh\",\"genre\":\"Crime/Detective\",\"editor\":\"Hamish Hamilton\",\"year\":\"1135\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"when-the-green-woods-laugh\"},{\"author\":\"Bryon Greenholt\",\"title\":\"A Passage to India\",\"genre\":\"Biography/Autobiography\",\"editor\":\"Mandrake Press\",\"year\":\"2009\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"a-passage-to-india\"},{\"author\":\"Mikaela Harvey\",\"title\":\"The Little Foxes\",\"genre\":\"Fiction in verse\",\"editor\":\"Churchill Livingstone\",\"year\":\"1580\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"the-little-foxes\"},{\"author\":\"Isis Wehner\",\"title\":\"Carrion Comfort\",\"genre\":\"Horror\",\"editor\":\"Indiana University Press\",\"year\":\"1608\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"carrion-comfort\"},{\"author\":\"Gov. Steven Carter\",\"title\":\"Blood's a Rover\",\"genre\":\"Legend\",\"editor\":\"Pan Books\",\"year\":\"1888\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"blood-s-a-rover\"}],\"count\":5,\"total_pages\":1,\"total_count\":5,\"current_page\":1,\"previous_page\":null,\"next_page\":null,\"next_page_url\":null,\"previous_page_url\":null}",
+              "body": "{\"page\":[{\"author\":\"Ms. Darin Wilderman\",\"title\":\"The Millstone\",\"genre\":\"Short story\",\"editor\":\"J. M. Dent\",\"year\":\"1001\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"the-millstone\"},{\"author\":\"Rickey Labadie Jr.\",\"title\":\"Sleep the Brave\",\"genre\":\"Realistic fiction\",\"editor\":\"Blackstaff Press\",\"year\":\"2009\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"sleep-the-brave\"},{\"author\":\"Napoleon Cormier\",\"title\":\"Cabbages and Kings\",\"genre\":\"Short story\",\"editor\":\"Virgin Publishing\",\"year\":\"1248\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"cabbages-and-kings\"},{\"author\":\"Norene Tremblay\",\"title\":\"I Will Fear No Evil\",\"genre\":\"Fiction narrative\",\"editor\":\"Tammi\",\"year\":\"1159\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"i-will-fear-no-evil\"},{\"author\":\"Aubrey Collins\",\"title\":\"The Curious Incident of the Dog in the Night-Time\",\"genre\":\"Fantasy\",\"editor\":\"Carlton Books\",\"year\":\"1286\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"the-curious-incident-of-the-dog-in-the-night-time\"}],\"count\":5,\"total_pages\":1,\"total_count\":5,\"current_page\":1,\"previous_page\":null,\"next_page\":null,\"next_page_url\":null,\"previous_page_url\":null}",
               "header": [
                 {
                   "key": "Content-Type",
@@ -99,7 +99,7 @@
             {
               "originalRequest": {
                 "url": {
-                  "raw": "http://localhost:3000/api/book?author=James+Hirthe&genre=Narrative+nonfiction&title=Tirra+Lirra+by+the+River",
+                  "raw": "http://localhost:3000/api/book?author=Emmanuel+Conroy&genre=Mythology&title=The+Little+Foxes",
                   "host": [
                     "http://localhost:3000"
                   ],
@@ -110,15 +110,15 @@
                   "query": [
                     {
                       "key": "author",
-                      "value": "\"James Hirthe\""
+                      "value": "\"Emmanuel Conroy\""
                     },
                     {
                       "key": "genre",
-                      "value": "\"Narrative nonfiction\""
+                      "value": "\"Mythology\""
                     },
                     {
                       "key": "title",
-                      "value": "\"Tirra Lirra by the River\""
+                      "value": "\"The Little Foxes\""
                     }
                   ],
                   "variable": [
@@ -135,7 +135,7 @@
               "status": "[200] with filter {}",
               "name": "[200] with filter {}",
               "code": 200,
-              "body": "{\"page\":[{\"author\":\"James Hirthe\",\"title\":\"Tirra Lirra by the River\",\"genre\":\"Narrative nonfiction\",\"editor\":\"University of Akron Press\",\"year\":\"1824\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"tirra-lirra-by-the-river\"}],\"count\":1,\"total_pages\":1,\"total_count\":1,\"current_page\":1,\"previous_page\":null,\"next_page\":null,\"next_page_url\":null,\"previous_page_url\":null}",
+              "body": "{\"page\":[{\"author\":\"Emmanuel Conroy\",\"title\":\"The Little Foxes\",\"genre\":\"Mythology\",\"editor\":\"Harry N. Abrams, Inc.\",\"year\":\"1859\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"the-little-foxes\"}],\"count\":1,\"total_pages\":1,\"total_count\":1,\"current_page\":1,\"previous_page\":null,\"next_page\":null,\"next_page_url\":null,\"previous_page_url\":null}",
               "header": [
                 {
                   "key": "Content-Type",
@@ -201,7 +201,7 @@
               "status": "[200] with valid value {}",
               "name": "[200] with valid value {}",
               "code": 200,
-              "body": "{\"author\":\"Fr. Kris Wilkinson\",\"title\":\"The Monkey's Raincoat\",\"genre\":\"Comic/Graphic Novel\",\"editor\":\"HarperPrism\",\"year\":\"1903\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"the-monkey-s-raincoat\"}",
+              "body": "{\"author\":\"Mitchell Fay II\",\"title\":\"This Side of Paradise\",\"genre\":\"Mystery\",\"editor\":\"University of Nebraska Press\",\"year\":\"1369\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"this-side-of-paradise\"}",
               "header": [
                 {
                   "key": "Content-Type",
@@ -237,7 +237,347 @@
               "status": "[404] with invalid value {}",
               "name": "[404] with invalid value {}",
               "code": 404,
-              "body": "{\"error\":\"can't find record with friendly id: \\\"debitis-aut\\\"\"}",
+              "body": "{\"error\":\"can't find record with friendly id: \\\"ullam_doloremque\\\"\"}",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "book suggestion",
+      "description": "Handles API book_suggestion.",
+      "item": [
+        {
+          "id": "post - /api/book_suggestion",
+          "name": "Create a new book suggestion.",
+          "description": null,
+          "request": {
+            "url": {
+              "raw": "http://localhost:3000/api/book_suggestion",
+              "host": [
+                "http://localhost:3000"
+              ],
+              "path": [
+                "api",
+                "book_suggestion"
+              ],
+              "query": [
+
+              ],
+              "variable": [
+
+              ]
+            },
+            "method": "post",
+            "description": null,
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "author=Rev.+Jennell+Jakubowski&editor=Carlton+Publishing+Group&link=http%3A%2F%2Fhermann.co%2Frusty&title=Pale+Kings+and+Princes&year=1409"
+            }
+          },
+          "response": [
+            {
+              "originalRequest": {
+                "url": {
+                  "raw": "http://localhost:3000/api/book_suggestion",
+                  "host": [
+                    "http://localhost:3000"
+                  ],
+                  "path": [
+                    "api",
+                    "book_suggestion"
+                  ],
+                  "query": [
+
+                  ],
+                  "variable": [
+
+                  ]
+                },
+                "method": "post",
+                "description": null,
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "author=Rev.+Jennell+Jakubowski&editor=Carlton+Publishing+Group&link=http%3A%2F%2Fhermann.co%2Frusty&title=Pale+Kings+and+Princes&year=1409"
+                }
+              },
+              "responseTime": null,
+              "status": "[201] alone with valid parameters required {}",
+              "name": "[201] alone with valid parameters required {}",
+              "code": 201,
+              "body": "{\"message\":\"Book Suggestion created\"}",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ]
+            },
+            {
+              "originalRequest": {
+                "url": {
+                  "raw": "http://localhost:3000/api/book_suggestion",
+                  "host": [
+                    "http://localhost:3000"
+                  ],
+                  "path": [
+                    "api",
+                    "book_suggestion"
+                  ],
+                  "query": [
+
+                  ],
+                  "variable": [
+
+                  ]
+                },
+                "method": "post",
+                "description": null,
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "author=Jude+Parker&editor=Churchill+Livingstone&link=http%3A%2F%2Fdooley-veum.io%2Fvictor_walsh&title=To+a+God+Unknown&user_id=17&year=1464"
+                }
+              },
+              "responseTime": null,
+              "status": "[201] with valid authenticated user {}",
+              "name": "[201] with valid authenticated user {}",
+              "code": 201,
+              "body": "{\"message\":\"Book Suggestion created\"}",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ]
+            },
+            {
+              "originalRequest": {
+                "url": {
+                  "raw": "http://localhost:3000/api/book_suggestion",
+                  "host": [
+                    "http://localhost:3000"
+                  ],
+                  "path": [
+                    "api",
+                    "book_suggestion"
+                  ],
+                  "query": [
+
+                  ],
+                  "variable": [
+
+                  ]
+                },
+                "method": "post",
+                "description": null,
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "author=Adriene+Wuckert&editor=Shuter+%26+Shooter+Publishers&link=http%3A%2F%2Fstreich-grady.info%2Fjoey&price=33.86&title=Edna+O%27Brien&year=1544"
+                }
+              },
+              "responseTime": null,
+              "status": "[201] with valid price param {}",
+              "name": "[201] with valid price param {}",
+              "code": 201,
+              "body": "{\"message\":\"Book Suggestion created\"}",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ]
+            },
+            {
+              "originalRequest": {
+                "url": {
+                  "raw": "http://localhost:3000/api/book_suggestion",
+                  "host": [
+                    "http://localhost:3000"
+                  ],
+                  "path": [
+                    "api",
+                    "book_suggestion"
+                  ],
+                  "query": [
+
+                  ],
+                  "variable": [
+
+                  ]
+                },
+                "method": "post",
+                "description": null,
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "author=Sommer+Haley&editor=George+Routledge+%26+Sons&link=http%3A%2F%2Forn.net%2Fasia&synopsis=Eveniet+ab+recusandae.+Labore+vero+sit.+Rem+voluptatum+eum.&title=Recalled+to+Life&year=1756"
+                }
+              },
+              "responseTime": null,
+              "status": "[201] with valid synopsis param {}",
+              "name": "[201] with valid synopsis param {}",
+              "code": 201,
+              "body": "{\"message\":\"Book Suggestion created\"}",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ]
+            },
+            {
+              "originalRequest": {
+                "url": {
+                  "raw": "http://localhost:3000/api/book_suggestion",
+                  "host": [
+                    "http://localhost:3000"
+                  ],
+                  "path": [
+                    "api",
+                    "book_suggestion"
+                  ],
+                  "query": [
+
+                  ],
+                  "variable": [
+
+                  ]
+                },
+                "method": "post",
+                "description": null,
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                  }
+                ]
+              },
+              "responseTime": null,
+              "status": "[422] without parameters required {}",
+              "name": "[422] without parameters required {}",
+              "code": 422,
+              "body": "{\"error\":{\"title\":[\"can't be blank\"],\"editor\":[\"can't be blank\"],\"link\":[\"is invalid\",\"can't be blank\"],\"year\":[\"is not a number\",\"is too short (minimum is 1 character)\",\"can't be blank\"],\"author\":[\"is invalid\",\"can't be blank\"]}}",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ]
+            },
+            {
+              "originalRequest": {
+                "url": {
+                  "raw": "http://localhost:3000/api/book_suggestion",
+                  "host": [
+                    "http://localhost:3000"
+                  ],
+                  "path": [
+                    "api",
+                    "book_suggestion"
+                  ],
+                  "query": [
+
+                  ],
+                  "variable": [
+
+                  ]
+                },
+                "method": "post",
+                "description": null,
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "lorem=lorem"
+                }
+              },
+              "responseTime": null,
+              "status": "[400] with invalid param {}",
+              "name": "[400] with invalid param {}",
+              "code": 400,
+              "body": "{\"error\":\"found unpermitted parameter: :lorem\"}",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ]
+            },
+            {
+              "originalRequest": {
+                "url": {
+                  "raw": "http://localhost:3000/api/book_suggestion",
+                  "host": [
+                    "http://localhost:3000"
+                  ],
+                  "path": [
+                    "api",
+                    "book_suggestion"
+                  ],
+                  "query": [
+
+                  ],
+                  "variable": [
+
+                  ]
+                },
+                "method": "post",
+                "description": null,
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "user_id=a"
+                }
+              },
+              "responseTime": null,
+              "status": "[404] with invalid param user_id {}",
+              "name": "[404] with invalid param user_id {}",
+              "code": 404,
+              "body": "{\"error\":\"Couldn't find User with 'id'=a\"}",
               "header": [
                 {
                   "key": "Content-Type",
