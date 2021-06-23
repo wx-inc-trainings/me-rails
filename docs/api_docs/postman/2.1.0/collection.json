@@ -7,6 +7,249 @@
   },
   "item": [
     {
+      "name": "book",
+      "description": "Handles API book.",
+      "item": [
+        {
+          "id": "get - /api/book",
+          "name": "List all available books",
+          "description": null,
+          "request": {
+            "url": {
+              "raw": "http://localhost:3000/api/book?author=&genre=&title=",
+              "host": [
+                "http://localhost:3000"
+              ],
+              "path": [
+                "api",
+                "book"
+              ],
+              "query": [
+                {
+                  "key": "author",
+                  "value": "\"\""
+                },
+                {
+                  "key": "genre",
+                  "value": "\"\""
+                },
+                {
+                  "key": "title",
+                  "value": "\"\""
+                }
+              ],
+              "variable": [
+
+              ]
+            },
+            "method": "get",
+            "description": null,
+            "header": [
+
+            ]
+          },
+          "response": [
+            {
+              "originalRequest": {
+                "url": {
+                  "raw": "http://localhost:3000/api/book?author=&genre=&title=",
+                  "host": [
+                    "http://localhost:3000"
+                  ],
+                  "path": [
+                    "api",
+                    "book"
+                  ],
+                  "query": [
+                    {
+                      "key": "author",
+                      "value": "\"\""
+                    },
+                    {
+                      "key": "genre",
+                      "value": "\"\""
+                    },
+                    {
+                      "key": "title",
+                      "value": "\"\""
+                    }
+                  ],
+                  "variable": [
+
+                  ]
+                },
+                "method": "get",
+                "description": null,
+                "header": [
+
+                ]
+              },
+              "responseTime": null,
+              "status": "[200] without filter {}",
+              "name": "[200] without filter {}",
+              "code": 200,
+              "body": "{\"page\":[{\"author\":\"Angelo Gerlach\",\"title\":\"When the Green Woods Laugh\",\"genre\":\"Crime/Detective\",\"editor\":\"Hamish Hamilton\",\"year\":\"1135\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"when-the-green-woods-laugh\"},{\"author\":\"Bryon Greenholt\",\"title\":\"A Passage to India\",\"genre\":\"Biography/Autobiography\",\"editor\":\"Mandrake Press\",\"year\":\"2009\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"a-passage-to-india\"},{\"author\":\"Mikaela Harvey\",\"title\":\"The Little Foxes\",\"genre\":\"Fiction in verse\",\"editor\":\"Churchill Livingstone\",\"year\":\"1580\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"the-little-foxes\"},{\"author\":\"Isis Wehner\",\"title\":\"Carrion Comfort\",\"genre\":\"Horror\",\"editor\":\"Indiana University Press\",\"year\":\"1608\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"carrion-comfort\"},{\"author\":\"Gov. Steven Carter\",\"title\":\"Blood's a Rover\",\"genre\":\"Legend\",\"editor\":\"Pan Books\",\"year\":\"1888\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"blood-s-a-rover\"}],\"count\":5,\"total_pages\":1,\"total_count\":5,\"current_page\":1,\"previous_page\":null,\"next_page\":null,\"next_page_url\":null,\"previous_page_url\":null}",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ]
+            },
+            {
+              "originalRequest": {
+                "url": {
+                  "raw": "http://localhost:3000/api/book?author=James+Hirthe&genre=Narrative+nonfiction&title=Tirra+Lirra+by+the+River",
+                  "host": [
+                    "http://localhost:3000"
+                  ],
+                  "path": [
+                    "api",
+                    "book"
+                  ],
+                  "query": [
+                    {
+                      "key": "author",
+                      "value": "\"James Hirthe\""
+                    },
+                    {
+                      "key": "genre",
+                      "value": "\"Narrative nonfiction\""
+                    },
+                    {
+                      "key": "title",
+                      "value": "\"Tirra Lirra by the River\""
+                    }
+                  ],
+                  "variable": [
+
+                  ]
+                },
+                "method": "get",
+                "description": null,
+                "header": [
+
+                ]
+              },
+              "responseTime": null,
+              "status": "[200] with filter {}",
+              "name": "[200] with filter {}",
+              "code": 200,
+              "body": "{\"page\":[{\"author\":\"James Hirthe\",\"title\":\"Tirra Lirra by the River\",\"genre\":\"Narrative nonfiction\",\"editor\":\"University of Akron Press\",\"year\":\"1824\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"tirra-lirra-by-the-river\"}],\"count\":1,\"total_pages\":1,\"total_count\":1,\"current_page\":1,\"previous_page\":null,\"next_page\":null,\"next_page_url\":null,\"previous_page_url\":null}",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "get - /api/book",
+          "name": "Show details of a book.",
+          "description": null,
+          "request": {
+            "url": {
+              "raw": "http://localhost:3000/api/book",
+              "host": [
+                "http://localhost:3000"
+              ],
+              "path": [
+                "api",
+                "book"
+              ],
+              "query": [
+
+              ],
+              "variable": [
+
+              ]
+            },
+            "method": "get",
+            "description": null,
+            "header": [
+
+            ]
+          },
+          "response": [
+            {
+              "originalRequest": {
+                "url": {
+                  "raw": "http://localhost:3000/api/book",
+                  "host": [
+                    "http://localhost:3000"
+                  ],
+                  "path": [
+                    "api",
+                    "book"
+                  ],
+                  "query": [
+
+                  ],
+                  "variable": [
+
+                  ]
+                },
+                "method": "get",
+                "description": null,
+                "header": [
+
+                ]
+              },
+              "responseTime": null,
+              "status": "[200] with valid value {}",
+              "name": "[200] with valid value {}",
+              "code": 200,
+              "body": "{\"author\":\"Fr. Kris Wilkinson\",\"title\":\"The Monkey's Raincoat\",\"genre\":\"Comic/Graphic Novel\",\"editor\":\"HarperPrism\",\"year\":\"1903\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"the-monkey-s-raincoat\"}",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ]
+            },
+            {
+              "originalRequest": {
+                "url": {
+                  "raw": "http://localhost:3000/api/book",
+                  "host": [
+                    "http://localhost:3000"
+                  ],
+                  "path": [
+                    "api",
+                    "book"
+                  ],
+                  "query": [
+
+                  ],
+                  "variable": [
+
+                  ]
+                },
+                "method": "get",
+                "description": null,
+                "header": [
+
+                ]
+              },
+              "responseTime": null,
+              "status": "[404] with invalid value {}",
+              "name": "[404] with invalid value {}",
+              "code": 404,
+              "body": "{\"error\":\"can't find record with friendly id: \\\"debitis-aut\\\"\"}",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "open library",
       "description": "Handles API open_library.",
       "item": [
