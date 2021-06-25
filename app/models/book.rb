@@ -3,6 +3,8 @@ class Book < ApplicationRecord
 
   friendly_id :title, use: :slugged
 
+  has_many :rent
+
   validates :image, :title, :editor, presence: true
 
   validates :year, numericality: { only_integer: true }, length: { is: 4 }, presence: true
@@ -14,5 +16,4 @@ class Book < ApplicationRecord
     title_changed?
   end
 
-  has_many :rent
 end

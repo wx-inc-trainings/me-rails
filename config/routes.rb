@@ -4,7 +4,9 @@ Rails.application.routes.draw do
     resources :book, only: [:index, :show], param: :slug
     resources :book_suggestion, only: [:create]
     resources :rent, only: [:index, :create]
+    get '/rent/book_rankings', to: 'rent#book_rankings', as: 'book_rankings'
   end
 
   mount_devise_token_auth_for 'User', at: 'auth', skip: [:omniauth_callbacks]
+
 end

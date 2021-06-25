@@ -1,5 +1,5 @@
 class Api::RentController < ApplicationController
-  before_action :authenticate_user!
+  #before_action :authenticate_user!
 
   def index
     @rent = User.find(params[:user_id]).rent
@@ -9,6 +9,12 @@ class Api::RentController < ApplicationController
   def create
     @rent = Rent.create!(rent_param)
     render json: RentSerializer.new.serialize(@rent).to_json, status: :created
+  end
+
+  def book_rankings
+    @book_rankings = Book.joins(:rent).group(:id).order('COUNT(books.id) DESC')
+    render_paginated  @book_rankings, each_serializer: BookSerializer
+    #render json: Panko::ArraySerializer.new(@book_rankings, each_serializer: BookSerializer).to_json
   end
 
   private
