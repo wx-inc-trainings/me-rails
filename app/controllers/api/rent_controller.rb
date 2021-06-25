@@ -14,7 +14,10 @@ class Api::RentController < ApplicationController
   def book_rankings
     @book_rankings = Book.joins(:rent).group(:id).order('COUNT(books.id) DESC')
     render_paginated  @book_rankings, each_serializer: BookSerializer
-    #render json: Panko::ArraySerializer.new(@book_rankings, each_serializer: BookSerializer).to_json
+  end
+
+  def active_rents
+    
   end
 
   private
