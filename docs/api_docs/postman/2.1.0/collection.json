@@ -11,17 +11,18 @@
       "description": "Handles API book.",
       "item": [
         {
-          "id": "get - /api/book",
+          "id": "get - /api/v1/book",
           "name": "List all available books",
           "description": null,
           "request": {
             "url": {
-              "raw": "http://localhost:3000/api/book?author=&genre=&title=",
+              "raw": "http://localhost:3000/api/v1/book?author=&genre=&title=",
               "host": [
                 "http://localhost:3000"
               ],
               "path": [
                 "api",
+                "v1",
                 "book"
               ],
               "query": [
@@ -52,12 +53,13 @@
             {
               "originalRequest": {
                 "url": {
-                  "raw": "http://localhost:3000/api/book?author=&genre=&title=",
+                  "raw": "http://localhost:3000/api/v1/book?author=&genre=&title=",
                   "host": [
                     "http://localhost:3000"
                   ],
                   "path": [
                     "api",
+                    "v1",
                     "book"
                   ],
                   "query": [
@@ -88,7 +90,7 @@
               "status": "[200] without filter {}",
               "name": "[200] without filter {}",
               "code": 200,
-              "body": "{\"page\":[{\"author\":\"Ms. Darin Wilderman\",\"title\":\"The Millstone\",\"genre\":\"Short story\",\"editor\":\"J. M. Dent\",\"year\":\"1001\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"the-millstone\"},{\"author\":\"Rickey Labadie Jr.\",\"title\":\"Sleep the Brave\",\"genre\":\"Realistic fiction\",\"editor\":\"Blackstaff Press\",\"year\":\"2009\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"sleep-the-brave\"},{\"author\":\"Napoleon Cormier\",\"title\":\"Cabbages and Kings\",\"genre\":\"Short story\",\"editor\":\"Virgin Publishing\",\"year\":\"1248\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"cabbages-and-kings\"},{\"author\":\"Norene Tremblay\",\"title\":\"I Will Fear No Evil\",\"genre\":\"Fiction narrative\",\"editor\":\"Tammi\",\"year\":\"1159\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"i-will-fear-no-evil\"},{\"author\":\"Aubrey Collins\",\"title\":\"The Curious Incident of the Dog in the Night-Time\",\"genre\":\"Fantasy\",\"editor\":\"Carlton Books\",\"year\":\"1286\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"the-curious-incident-of-the-dog-in-the-night-time\"}],\"count\":5,\"total_pages\":1,\"total_count\":5,\"current_page\":1,\"previous_page\":null,\"next_page\":null,\"next_page_url\":null,\"previous_page_url\":null}",
+              "body": "{\"page\":[{\"author\":\"Gay Bosco MD\",\"title\":\"Lilies of the Field\",\"genre\":\"Fantasy\",\"editor\":\"Oberon Books\",\"year\":\"1705\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"lilies-of-the-field\"},{\"author\":\"Eric Schowalter\",\"title\":\"Jacob Have I Loved\",\"genre\":\"Western\",\"editor\":\"Reed Publishing\",\"year\":\"1182\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"jacob-have-i-loved\"},{\"author\":\"Angeles Kuvalis\",\"title\":\"Beyond the Mexique Bay\",\"genre\":\"Textbook\",\"editor\":\"McClelland and Stewart\",\"year\":\"1649\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"beyond-the-mexique-bay\"},{\"author\":\"Yuki Dach\",\"title\":\"Blithe Spirit\",\"genre\":\"Mythopoeia\",\"editor\":\"Scholastic Press\",\"year\":\"1036\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"blithe-spirit\"},{\"author\":\"Eugenio Wolff VM\",\"title\":\"I Will Fear No Evil\",\"genre\":\"Horror\",\"editor\":\"Basic Books\",\"year\":\"1866\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"i-will-fear-no-evil\"}],\"count\":5,\"total_pages\":1,\"total_count\":5,\"current_page\":1,\"previous_page\":null,\"next_page\":null,\"next_page_url\":null,\"previous_page_url\":null}",
               "header": [
                 {
                   "key": "Content-Type",
@@ -99,26 +101,27 @@
             {
               "originalRequest": {
                 "url": {
-                  "raw": "http://localhost:3000/api/book?author=Emmanuel+Conroy&genre=Mythology&title=The+Little+Foxes",
+                  "raw": "http://localhost:3000/api/v1/book?author=Elisha+Bernier&genre=Fiction+in+verse&title=To+Sail+Beyond+the+Sunset",
                   "host": [
                     "http://localhost:3000"
                   ],
                   "path": [
                     "api",
+                    "v1",
                     "book"
                   ],
                   "query": [
                     {
                       "key": "author",
-                      "value": "\"Emmanuel Conroy\""
+                      "value": "\"Elisha Bernier\""
                     },
                     {
                       "key": "genre",
-                      "value": "\"Mythology\""
+                      "value": "\"Fiction in verse\""
                     },
                     {
                       "key": "title",
-                      "value": "\"The Little Foxes\""
+                      "value": "\"To Sail Beyond the Sunset\""
                     }
                   ],
                   "variable": [
@@ -135,7 +138,7 @@
               "status": "[200] with filter {}",
               "name": "[200] with filter {}",
               "code": 200,
-              "body": "{\"page\":[{\"author\":\"Emmanuel Conroy\",\"title\":\"The Little Foxes\",\"genre\":\"Mythology\",\"editor\":\"Harry N. Abrams, Inc.\",\"year\":\"1859\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"the-little-foxes\"}],\"count\":1,\"total_pages\":1,\"total_count\":1,\"current_page\":1,\"previous_page\":null,\"next_page\":null,\"next_page_url\":null,\"previous_page_url\":null}",
+              "body": "{\"page\":[{\"author\":\"Elisha Bernier\",\"title\":\"To Sail Beyond the Sunset\",\"genre\":\"Fiction in verse\",\"editor\":\"McGraw-Hill Education\",\"year\":\"1436\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"to-sail-beyond-the-sunset\"}],\"count\":1,\"total_pages\":1,\"total_count\":1,\"current_page\":1,\"previous_page\":null,\"next_page\":null,\"next_page_url\":null,\"previous_page_url\":null}",
               "header": [
                 {
                   "key": "Content-Type",
@@ -146,17 +149,18 @@
           ]
         },
         {
-          "id": "get - /api/book",
+          "id": "get - /api/v1/book",
           "name": "Show details of a book.",
           "description": null,
           "request": {
             "url": {
-              "raw": "http://localhost:3000/api/book",
+              "raw": "http://localhost:3000/api/v1/book",
               "host": [
                 "http://localhost:3000"
               ],
               "path": [
                 "api",
+                "v1",
                 "book"
               ],
               "query": [
@@ -176,12 +180,13 @@
             {
               "originalRequest": {
                 "url": {
-                  "raw": "http://localhost:3000/api/book",
+                  "raw": "http://localhost:3000/api/v1/book",
                   "host": [
                     "http://localhost:3000"
                   ],
                   "path": [
                     "api",
+                    "v1",
                     "book"
                   ],
                   "query": [
@@ -201,7 +206,7 @@
               "status": "[200] with valid value {}",
               "name": "[200] with valid value {}",
               "code": 200,
-              "body": "{\"author\":\"Mitchell Fay II\",\"title\":\"This Side of Paradise\",\"genre\":\"Mystery\",\"editor\":\"University of Nebraska Press\",\"year\":\"1369\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"this-side-of-paradise\"}",
+              "body": "{\"author\":\"Caleb Zboncak\",\"title\":\"To Sail Beyond the Sunset\",\"genre\":\"Mythopoeia\",\"editor\":\"Booktrope\",\"year\":\"1869\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"to-sail-beyond-the-sunset\"}",
               "header": [
                 {
                   "key": "Content-Type",
@@ -212,12 +217,13 @@
             {
               "originalRequest": {
                 "url": {
-                  "raw": "http://localhost:3000/api/book",
+                  "raw": "http://localhost:3000/api/v1/book",
                   "host": [
                     "http://localhost:3000"
                   ],
                   "path": [
                     "api",
+                    "v1",
                     "book"
                   ],
                   "query": [
@@ -237,7 +243,7 @@
               "status": "[404] with invalid value {}",
               "name": "[404] with invalid value {}",
               "code": 404,
-              "body": "{\"error\":\"can't find record with friendly id: \\\"ullam_doloremque\\\"\"}",
+              "body": "{\"error\":\"can't find record with friendly id: \\\"ut_aut\\\"\"}",
               "header": [
                 {
                   "key": "Content-Type",
@@ -254,17 +260,18 @@
       "description": "Handles API book_suggestion.",
       "item": [
         {
-          "id": "post - /api/book_suggestion",
+          "id": "post - /api/v1/book_suggestion",
           "name": "Create a new book suggestion.",
           "description": null,
           "request": {
             "url": {
-              "raw": "http://localhost:3000/api/book_suggestion",
+              "raw": "http://localhost:3000/api/v1/book_suggestion",
               "host": [
                 "http://localhost:3000"
               ],
               "path": [
                 "api",
+                "v1",
                 "book_suggestion"
               ],
               "query": [
@@ -284,19 +291,20 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "author=Rev.+Jennell+Jakubowski&editor=Carlton+Publishing+Group&link=http%3A%2F%2Fhermann.co%2Frusty&title=Pale+Kings+and+Princes&year=1409"
+              "raw": "author=Merle+Legros&editor=Tartarus+Press&link=http%3A%2F%2Fschneider.biz%2Fodis&title=O+Pioneers%21&year=1259"
             }
           },
           "response": [
             {
               "originalRequest": {
                 "url": {
-                  "raw": "http://localhost:3000/api/book_suggestion",
+                  "raw": "http://localhost:3000/api/v1/book_suggestion",
                   "host": [
                     "http://localhost:3000"
                   ],
                   "path": [
                     "api",
+                    "v1",
                     "book_suggestion"
                   ],
                   "query": [
@@ -316,30 +324,30 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "author=Rev.+Jennell+Jakubowski&editor=Carlton+Publishing+Group&link=http%3A%2F%2Fhermann.co%2Frusty&title=Pale+Kings+and+Princes&year=1409"
+                  "raw": "author=Merle+Legros&editor=Tartarus+Press&link=http%3A%2F%2Fschneider.biz%2Fodis&title=O+Pioneers%21&year=1259"
                 }
               },
               "responseTime": null,
               "status": "[201] alone with valid parameters required {}",
               "name": "[201] alone with valid parameters required {}",
               "code": 201,
-              "body": "{\"message\":\"Book Suggestion created\"}",
               "header": [
                 {
                   "key": "Content-Type",
-                  "value": "application/json"
+                  "value": "text/html"
                 }
               ]
             },
             {
               "originalRequest": {
                 "url": {
-                  "raw": "http://localhost:3000/api/book_suggestion",
+                  "raw": "http://localhost:3000/api/v1/book_suggestion",
                   "host": [
                     "http://localhost:3000"
                   ],
                   "path": [
                     "api",
+                    "v1",
                     "book_suggestion"
                   ],
                   "query": [
@@ -359,30 +367,30 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "author=Jude+Parker&editor=Churchill+Livingstone&link=http%3A%2F%2Fdooley-veum.io%2Fvictor_walsh&title=To+a+God+Unknown&user_id=17&year=1464"
+                  "raw": "author=Hershel+Heathcote&editor=Cisco+Press&link=http%3A%2F%2Ffriesen.org%2Ffletcher_ratke&title=Cabbages+and+Kings&user_id=17&year=1103"
                 }
               },
               "responseTime": null,
               "status": "[201] with valid authenticated user {}",
               "name": "[201] with valid authenticated user {}",
               "code": 201,
-              "body": "{\"message\":\"Book Suggestion created\"}",
               "header": [
                 {
                   "key": "Content-Type",
-                  "value": "application/json"
+                  "value": "text/html"
                 }
               ]
             },
             {
               "originalRequest": {
                 "url": {
-                  "raw": "http://localhost:3000/api/book_suggestion",
+                  "raw": "http://localhost:3000/api/v1/book_suggestion",
                   "host": [
                     "http://localhost:3000"
                   ],
                   "path": [
                     "api",
+                    "v1",
                     "book_suggestion"
                   ],
                   "query": [
@@ -402,30 +410,30 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "author=Adriene+Wuckert&editor=Shuter+%26+Shooter+Publishers&link=http%3A%2F%2Fstreich-grady.info%2Fjoey&price=33.86&title=Edna+O%27Brien&year=1544"
+                  "raw": "author=Gov.+Royce+Daugherty&editor=Hackett+Publishing+Company&link=http%3A%2F%2Fkilback.biz%2Fjacinto.feest&price=9.76&title=A+Passage+to+India&year=1652"
                 }
               },
               "responseTime": null,
               "status": "[201] with valid price param {}",
               "name": "[201] with valid price param {}",
               "code": 201,
-              "body": "{\"message\":\"Book Suggestion created\"}",
               "header": [
                 {
                   "key": "Content-Type",
-                  "value": "application/json"
+                  "value": "text/html"
                 }
               ]
             },
             {
               "originalRequest": {
                 "url": {
-                  "raw": "http://localhost:3000/api/book_suggestion",
+                  "raw": "http://localhost:3000/api/v1/book_suggestion",
                   "host": [
                     "http://localhost:3000"
                   ],
                   "path": [
                     "api",
+                    "v1",
                     "book_suggestion"
                   ],
                   "query": [
@@ -445,30 +453,30 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "author=Sommer+Haley&editor=George+Routledge+%26+Sons&link=http%3A%2F%2Forn.net%2Fasia&synopsis=Eveniet+ab+recusandae.+Labore+vero+sit.+Rem+voluptatum+eum.&title=Recalled+to+Life&year=1756"
+                  "raw": "author=Amb.+Hugh+Shields&editor=Kessinger+Publishing&link=http%3A%2F%2Fkutch.info%2Fward&synopsis=Id+iste+ea.+Error+et+rerum.+Voluptas+quisquam+est.&title=The+Wives+of+Bath&year=1850"
                 }
               },
               "responseTime": null,
               "status": "[201] with valid synopsis param {}",
               "name": "[201] with valid synopsis param {}",
               "code": 201,
-              "body": "{\"message\":\"Book Suggestion created\"}",
               "header": [
                 {
                   "key": "Content-Type",
-                  "value": "application/json"
+                  "value": "text/html"
                 }
               ]
             },
             {
               "originalRequest": {
                 "url": {
-                  "raw": "http://localhost:3000/api/book_suggestion",
+                  "raw": "http://localhost:3000/api/v1/book_suggestion",
                   "host": [
                     "http://localhost:3000"
                   ],
                   "path": [
                     "api",
+                    "v1",
                     "book_suggestion"
                   ],
                   "query": [
@@ -502,12 +510,13 @@
             {
               "originalRequest": {
                 "url": {
-                  "raw": "http://localhost:3000/api/book_suggestion",
+                  "raw": "http://localhost:3000/api/v1/book_suggestion",
                   "host": [
                     "http://localhost:3000"
                   ],
                   "path": [
                     "api",
+                    "v1",
                     "book_suggestion"
                   ],
                   "query": [
@@ -545,12 +554,13 @@
             {
               "originalRequest": {
                 "url": {
-                  "raw": "http://localhost:3000/api/book_suggestion",
+                  "raw": "http://localhost:3000/api/v1/book_suggestion",
                   "host": [
                     "http://localhost:3000"
                   ],
                   "path": [
                     "api",
+                    "v1",
                     "book_suggestion"
                   ],
                   "query": [
@@ -594,17 +604,18 @@
       "description": "Handles API open_library.",
       "item": [
         {
-          "id": "get - /api/open_library",
+          "id": "get - /api/v1/open_library",
           "name": "Show details of an open library.",
           "description": null,
           "request": {
             "url": {
-              "raw": "http://localhost:3000/api/open_library",
+              "raw": "http://localhost:3000/api/v1/open_library",
               "host": [
                 "http://localhost:3000"
               ],
               "path": [
                 "api",
+                "v1",
                 "open_library"
               ],
               "query": [
@@ -624,12 +635,13 @@
             {
               "originalRequest": {
                 "url": {
-                  "raw": "http://localhost:3000/api/open_library",
+                  "raw": "http://localhost:3000/api/v1/open_library",
                   "host": [
                     "http://localhost:3000"
                   ],
                   "path": [
                     "api",
+                    "v1",
                     "open_library"
                   ],
                   "query": [
@@ -660,12 +672,13 @@
             {
               "originalRequest": {
                 "url": {
-                  "raw": "http://localhost:3000/api/open_library",
+                  "raw": "http://localhost:3000/api/v1/open_library",
                   "host": [
                     "http://localhost:3000"
                   ],
                   "path": [
                     "api",
+                    "v1",
                     "open_library"
                   ],
                   "query": [

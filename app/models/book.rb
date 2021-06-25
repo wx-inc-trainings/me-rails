@@ -15,4 +15,5 @@ class Book < ApplicationRecord
   end
 
   has_many :rent
+
 end

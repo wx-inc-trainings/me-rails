@@ -1,13 +1,9 @@
 class RentSerializer < Panko::Serializer
-    attributes :id, :from, :to
-    has_one :book, serializer: BookSerializer
-    has_one :user, serializer: UserSerializer
+  attributes :id
 
-    def from 
-        "#{object.start_date}"
-    end
+  aliases start_date: :from, end_date: :to
 
-    def to 
-        "#{object.end_date}"
-    end
+  has_one :book, serializer: BookSerializer
+  has_one :user, serializer: UserSerializer
+
 end

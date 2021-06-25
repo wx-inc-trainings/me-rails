@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Api::BookController, type: :controller do
+RSpec.describe Api::V1::BookController, type: :controller do
   include_context 'Authenticated User'
 
   describe action 'GET #index' do
