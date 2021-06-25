@@ -3,7 +3,7 @@ class Api::RentController < ApplicationController
 
   def index
     @rent = User.find(params[:user_id]).rent
-    render json: Panko::ArraySerializer.new(@rent, each_serializer: RentSerializer).to_json
+    render_paginated @rent, each_serializer: RentSerializer
   end
 
   def create

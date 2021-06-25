@@ -6,5 +6,4 @@ class RentSerializer < Panko::Serializer
     has_one :book, serializer: BookSerializer
     has_one :user, serializer: UserSerializer
 
-
 end
