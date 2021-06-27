@@ -16,4 +16,6 @@ class Book < ApplicationRecord
     title_changed?
   end
 
+  scope :book_rents_rankings, -> { joins(:rent).group(:id).order('COUNT(books.id) DESC') }
+
 end
