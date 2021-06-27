@@ -8,6 +8,7 @@ class Rent < ApplicationRecord
                                  where('start_date <= ? ', date)
                                    .where('end_date >= ? ', date)
                                    .where(returned_at: nil)
+                                   .order(end_date: :asc)
                                }
 
 end
