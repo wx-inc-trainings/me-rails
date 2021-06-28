@@ -14,6 +14,6 @@ class Book < ApplicationRecord
     title_changed?
   end
 
-  has_many :rent
+  has_many :rents
 
 end
