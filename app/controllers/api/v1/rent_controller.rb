@@ -4,7 +4,7 @@ module Api
       before_action :authenticate_user!
 
       def index
-        @rent = User.find(params[:user_id]).rent
+        @rent = User.find(params[:user_id]).rents
         render_paginated @rent, each_serializer: RentSerializer
       end
 
