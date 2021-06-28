@@ -3,7 +3,7 @@ class Book < ApplicationRecord
 
   friendly_id :title, use: :slugged
 
-  has_many :rent
+  has_many :rents
 
   validates :image, :title, :editor, presence: true
 
@@ -12,10 +12,10 @@ class Book < ApplicationRecord
   validates :author, :genre, format: { with: /\A[a-zA-Z]+\W?(\s?|[a-zA-Z]+\W?)*\z/ },
                              presence: true
 
+  scope :book_rents_rankings, -> { joins(:rent).group(:id).order('COUNT(books.id) DESC') }
+
   def should_generate_new_friendly_id?
     title_changed?
   end
-
-  scope :book_rents_rankings, -> { joins(:rent).group(:id).order('COUNT(books.id) DESC') }
 
 end
