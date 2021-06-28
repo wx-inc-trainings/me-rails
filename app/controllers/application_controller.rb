@@ -1,7 +1,8 @@
 class ApplicationController < ActionController::Base
   include DeviseTokenAuth::Concerns::SetUserByToken
+  include Pundit
   include Wor::Paginate
-
+  
   protect_from_forgery with: :null_session
 
   rescue_from ActionController::UnpermittedParameters, with: :unpermitted_parameters
