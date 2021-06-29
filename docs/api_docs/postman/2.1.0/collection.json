@@ -90,7 +90,7 @@
               "status": "[200] without filter {}",
               "name": "[200] without filter {}",
               "code": 200,
-              "body": "{\"page\":[{\"author\":\"Gay Bosco MD\",\"title\":\"Lilies of the Field\",\"genre\":\"Fantasy\",\"editor\":\"Oberon Books\",\"year\":\"1705\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"lilies-of-the-field\"},{\"author\":\"Eric Schowalter\",\"title\":\"Jacob Have I Loved\",\"genre\":\"Western\",\"editor\":\"Reed Publishing\",\"year\":\"1182\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"jacob-have-i-loved\"},{\"author\":\"Angeles Kuvalis\",\"title\":\"Beyond the Mexique Bay\",\"genre\":\"Textbook\",\"editor\":\"McClelland and Stewart\",\"year\":\"1649\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"beyond-the-mexique-bay\"},{\"author\":\"Yuki Dach\",\"title\":\"Blithe Spirit\",\"genre\":\"Mythopoeia\",\"editor\":\"Scholastic Press\",\"year\":\"1036\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"blithe-spirit\"},{\"author\":\"Eugenio Wolff VM\",\"title\":\"I Will Fear No Evil\",\"genre\":\"Horror\",\"editor\":\"Basic Books\",\"year\":\"1866\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"i-will-fear-no-evil\"}],\"count\":5,\"total_pages\":1,\"total_count\":5,\"current_page\":1,\"previous_page\":null,\"next_page\":null,\"next_page_url\":null,\"previous_page_url\":null}",
+              "body": "{\"page\":[{\"author\":\"Wiley Schiller Jr.\",\"title\":\"In a Glass Darkly\",\"genre\":\"Mythology\",\"editor\":\"Burns \\u0026 Oates\",\"year\":\"1540\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"in-a-glass-darkly\",\"times_rented\":\"0\"},{\"author\":\"Fr. Arden Reichel\",\"title\":\"No Country for Old Men\",\"genre\":\"Mythology\",\"editor\":\"Darakwon Press\",\"year\":\"1650\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"no-country-for-old-men\",\"times_rented\":\"0\"},{\"author\":\"Carol Gleichner\",\"title\":\"Little Hands Clapping\",\"genre\":\"Textbook\",\"editor\":\"SAGE Publications\",\"year\":\"1871\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"little-hands-clapping\",\"times_rented\":\"0\"},{\"author\":\"Ashley Stoltenberg\",\"title\":\"The Proper Study\",\"genre\":\"Realistic fiction\",\"editor\":\"Book Works\",\"year\":\"1498\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"the-proper-study\",\"times_rented\":\"0\"},{\"author\":\"Bradley Walter\",\"title\":\"Eyeless in Gaza\",\"genre\":\"Tall tale\",\"editor\":\"Horizon Scientific Press\",\"year\":\"1524\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"eyeless-in-gaza\",\"times_rented\":\"0\"}],\"count\":5,\"total_pages\":1,\"total_count\":5,\"current_page\":1,\"previous_page\":null,\"next_page\":null,\"next_page_url\":null,\"previous_page_url\":null}",
               "header": [
                 {
                   "key": "Content-Type",
@@ -101,7 +101,7 @@
             {
               "originalRequest": {
                 "url": {
-                  "raw": "http://localhost:3000/api/v1/book?author=Elisha+Bernier&genre=Fiction+in+verse&title=To+Sail+Beyond+the+Sunset",
+                  "raw": "http://localhost:3000/api/v1/book?author=Arnold+Cummerata&genre=Short+story&title=No+Country+for+Old+Men",
                   "host": [
                     "http://localhost:3000"
                   ],
@@ -113,15 +113,15 @@
                   "query": [
                     {
                       "key": "author",
-                      "value": "\"Elisha Bernier\""
+                      "value": "\"Arnold Cummerata\""
                     },
                     {
                       "key": "genre",
-                      "value": "\"Fiction in verse\""
+                      "value": "\"Short story\""
                     },
                     {
                       "key": "title",
-                      "value": "\"To Sail Beyond the Sunset\""
+                      "value": "\"No Country for Old Men\""
                     }
                   ],
                   "variable": [
@@ -138,7 +138,7 @@
               "status": "[200] with filter {}",
               "name": "[200] with filter {}",
               "code": 200,
-              "body": "{\"page\":[{\"author\":\"Elisha Bernier\",\"title\":\"To Sail Beyond the Sunset\",\"genre\":\"Fiction in verse\",\"editor\":\"McGraw-Hill Education\",\"year\":\"1436\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"to-sail-beyond-the-sunset\"}],\"count\":1,\"total_pages\":1,\"total_count\":1,\"current_page\":1,\"previous_page\":null,\"next_page\":null,\"next_page_url\":null,\"previous_page_url\":null}",
+              "body": "{\"page\":[{\"author\":\"Arnold Cummerata\",\"title\":\"No Country for Old Men\",\"genre\":\"Short story\",\"editor\":\"Del Rey Books\",\"year\":\"1556\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"no-country-for-old-men\",\"times_rented\":\"0\"}],\"count\":1,\"total_pages\":1,\"total_count\":1,\"current_page\":1,\"previous_page\":null,\"next_page\":null,\"next_page_url\":null,\"previous_page_url\":null}",
               "header": [
                 {
                   "key": "Content-Type",
@@ -206,7 +206,7 @@
               "status": "[200] with valid value {}",
               "name": "[200] with valid value {}",
               "code": 200,
-              "body": "{\"author\":\"Caleb Zboncak\",\"title\":\"To Sail Beyond the Sunset\",\"genre\":\"Mythopoeia\",\"editor\":\"Booktrope\",\"year\":\"1869\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"to-sail-beyond-the-sunset\"}",
+              "body": "{\"author\":\"Laquanda Torp\",\"title\":\"When the Green Woods Laugh\",\"genre\":\"Mythopoeia\",\"editor\":\"Gefen Publishing House\",\"year\":\"1469\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"when-the-green-woods-laugh\",\"times_rented\":\"0\"}",
               "header": [
                 {
                   "key": "Content-Type",
@@ -243,7 +243,7 @@
               "status": "[404] with invalid value {}",
               "name": "[404] with invalid value {}",
               "code": 404,
-              "body": "{\"error\":\"can't find record with friendly id: \\\"ut_aut\\\"\"}",
+              "body": "{\"error\":\"can't find record with friendly id: \\\"error_necessitatibus\\\"\"}",
               "header": [
                 {
                   "key": "Content-Type",
@@ -291,7 +291,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "author=Merle+Legros&editor=Tartarus+Press&link=http%3A%2F%2Fschneider.biz%2Fodis&title=O+Pioneers%21&year=1259"
+              "raw": "author=Arlie+Kunde&editor=Atheneum+Books&link=http%3A%2F%2Fwolff.info%2Fkaterine&title=Blithe+Spirit&year=1496"
             }
           },
           "response": [
@@ -324,7 +324,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "author=Merle+Legros&editor=Tartarus+Press&link=http%3A%2F%2Fschneider.biz%2Fodis&title=O+Pioneers%21&year=1259"
+                  "raw": "author=Arlie+Kunde&editor=Atheneum+Books&link=http%3A%2F%2Fwolff.info%2Fkaterine&title=Blithe+Spirit&year=1496"
                 }
               },
               "responseTime": null,
@@ -367,7 +367,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "author=Hershel+Heathcote&editor=Cisco+Press&link=http%3A%2F%2Ffriesen.org%2Ffletcher_ratke&title=Cabbages+and+Kings&user_id=17&year=1103"
+                  "raw": "author=Ron+Jones&editor=Blackstaff+Press&link=http%3A%2F%2Fwindler-waters.io%2Fkorey&title=Quo+Vadis&user_id=17&year=1892"
                 }
               },
               "responseTime": null,
@@ -410,7 +410,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "author=Gov.+Royce+Daugherty&editor=Hackett+Publishing+Company&link=http%3A%2F%2Fkilback.biz%2Fjacinto.feest&price=9.76&title=A+Passage+to+India&year=1652"
+                  "raw": "author=Candi+Upton&editor=Velazquez+Press&link=http%3A%2F%2Fglover.co%2Flenore_corkery&price=1.64&title=The+Other+Side+of+Silence&year=1010"
                 }
               },
               "responseTime": null,
@@ -453,7 +453,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "author=Amb.+Hugh+Shields&editor=Kessinger+Publishing&link=http%3A%2F%2Fkutch.info%2Fward&synopsis=Id+iste+ea.+Error+et+rerum.+Voluptas+quisquam+est.&title=The+Wives+of+Bath&year=1850"
+                  "raw": "author=Rep.+Sterling+Beatty&editor=George+Routledge+%26+Sons&link=http%3A%2F%2Fhintz-zboncak.name%2Fjame_kihn&synopsis=Qui+sunt+et.+Id+sunt+mollitia.+Illum+cupiditate+dolores.&title=Ring+of+Bright+Water&year=1432"
                 }
               },
               "responseTime": null,

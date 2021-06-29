@@ -13,6 +13,15 @@ module Api
         render json: RentSerializer.new.serialize(@rent).to_json, status: :created
       end
 
+      def book_rankings
+        render_paginated Book.book_rents_rankings, each_serializer: BookSerializer
+      end
+
+      def active_rents
+        render_paginated Rent.active_rents_by_date(Time.now.to_date),
+                         each_serializer: RentSerializer
+      end
+
       private
 
       def rent_param

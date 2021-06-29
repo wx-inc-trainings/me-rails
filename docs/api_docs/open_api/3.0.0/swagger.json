@@ -21,7 +21,7 @@
             "description": "with valid value {}",
             "content": {
               "application/json": {
-                "example": "{\"author\":\"Caleb Zboncak\",\"title\":\"To Sail Beyond the Sunset\",\"genre\":\"Mythopoeia\",\"editor\":\"Booktrope\",\"year\":\"1869\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"to-sail-beyond-the-sunset\"}"
+                "example": "{\"author\":\"Laquanda Torp\",\"title\":\"When the Green Woods Laugh\",\"genre\":\"Mythopoeia\",\"editor\":\"Gefen Publishing House\",\"year\":\"1469\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"when-the-green-woods-laugh\",\"times_rented\":\"0\"}"
               }
             }
           },
@@ -29,7 +29,7 @@
             "description": "with invalid value {}",
             "content": {
               "application/json": {
-                "example": "{\"error\":\"can't find record with friendly id: \\\"ut_aut\\\"\"}"
+                "example": "{\"error\":\"can't find record with friendly id: \\\"error_necessitatibus\\\"\"}"
               }
             }
           }
@@ -50,7 +50,7 @@
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
-              "example": "author=Merle+Legros&editor=Tartarus+Press&link=http%3A%2F%2Fschneider.biz%2Fodis&title=O+Pioneers%21&year=1259"
+              "example": "author=Arlie+Kunde&editor=Atheneum+Books&link=http%3A%2F%2Fwolff.info%2Fkaterine&title=Blithe+Spirit&year=1496"
             }
           }
         },
