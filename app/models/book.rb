@@ -3,7 +3,7 @@ class Book < ApplicationRecord
 
   friendly_id :title, use: :slugged
 
-  has_many :rent
+  has_many :rents
 
   validates :image, :title, :editor, presence: true
 
