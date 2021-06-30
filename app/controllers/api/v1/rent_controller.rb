@@ -11,6 +11,7 @@ module Api
 
       def create
         @rent = Rent.new(rent_param)
+        @rent.user_id = params[:user_id]
         authorize @rent
         @rent.save!
         render json: RentSerializer.new.serialize(@rent).to_json, status: :created
@@ -28,7 +29,7 @@ module Api
       private
 
       def rent_param
-        params.require(:rent).permit(:user_id, :book_id, :start_date, :end_date)
+        params.require(:rent).permit(:book_id, :start_date, :end_date)
       end
 
     end
