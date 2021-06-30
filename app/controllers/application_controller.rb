@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   include DeviseTokenAuth::Concerns::SetUserByToken
   include Pundit
   include Wor::Paginate
-  
+
   protect_from_forgery with: :null_session
 
   rescue_from ActionController::UnpermittedParameters, with: :unpermitted_parameters
@@ -23,7 +23,7 @@ class ApplicationController < ActionController::Base
   end
 
   def not_authorized
-    render json: { error: "You are not authorized to perform this action."}, status: :unauthorized
+    render json: { error: 'You are not authorized to perform this action.' }, status: :unauthorized
   end
 
 end
