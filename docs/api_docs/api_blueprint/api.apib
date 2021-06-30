@@ -21,7 +21,6 @@ Handles api book.
 + Response 200 (application/json)
  
   + Header
-
             access-token: LXlhpfd3mnIJ743T1B1xlA
             token-type: Bearer
             client: mo7g-SF1mFmuhw0xKHHZVg
@@ -89,9 +88,7 @@ Handles api book_suggestion.
 + Request alone with valid parameters required {} 
  
   + Header
-
             warden: Warden::Proxy:72720 @config={:default_scope=>:user, :scope_defaults=>{}, :default_strategies=>{:user=>[:rememberable, :database_authenticatable]}, :intercept_401=>false, :failure_app=>#<Devise::Delegator:0x00007fa4e14d3888>}
- 
   + Body
 
       ```
@@ -194,6 +191,67 @@ Handles api book_suggestion.
  
   + Header
 
+            warden: Warden::Proxy:72820 @config={:default_scope=>:user, :scope_defaults=>{}, :default_strategies=>{:user=>[:rememberable, :database_authenticatable]}, :intercept_401=>false, :failure_app=>#<Devise::Delegator:0x00007fa4e14d3888>}
+ 
+  + Body
+
+      ```
+      author=Candi+Upton&editor=Velazquez+Press&link=http%3A%2F%2Fglover.co%2Flenore_corkery&price=1.64&title=The+Other+Side+of+Silence&year=1010
+      ```
+
+
++ Response 201 (text/html)
+
+  + Body
+
++ Request with valid synopsis param {} 
+ 
+  + Header
+            warden: Warden::Proxy:72780 @config={:default_scope=>:user, :scope_defaults=>{}, :default_strategies=>{:user=>[:rememberable, :database_authenticatable]}, :intercept_401=>false, :failure_app=>#<Devise::Delegator:0x00007fa4e14d3888>}
+  + Body
+
+      ```
+      author=Rep.+Sterling+Beatty&editor=George+Routledge+%26+Sons&link=http%3A%2F%2Fhintz-zboncak.name%2Fjame_kihn&synopsis=Qui+sunt+et.+Id+sunt+mollitia.+Illum+cupiditate+dolores.&title=Ring+of+Bright+Water&year=1432
+      ```
+
+
++ Response 201 (text/html)
+
+  + Body
+
++ Response 422 (application/json)
+ 
+  + Body
+
+      ```
+      {"error":{"title":["can't be blank"],"editor":["can't be blank"],"link":["is invalid","can't be blank"],"year":["is not a number","is too short (minimum is 1 character)","can't be blank"],"author":["is invalid","can't be blank"]}}
+      ```
+
+
++ Request with invalid param {} 
+ 
+  + Header
+            warden: Warden::Proxy:72800 @config={:default_scope=>:user, :scope_defaults=>{}, :default_strategies=>{:user=>[:rememberable, :database_authenticatable]}, :intercept_401=>false, :failure_app=>#<Devise::Delegator:0x00007fa4e14d3888>}
+ 
+  + Body
+
+      ```
+      lorem=lorem
+      ```
+
+
++ Response 400 (application/json)
+ 
+  + Body
+
+      ```
+      {"error":"found unpermitted parameter: :lorem"}
+      ```
+
+
++ Request with invalid param user_id {} 
+ 
+  + Header
             warden: Warden::Proxy:72820 @config={:default_scope=>:user, :scope_defaults=>{}, :default_strategies=>{:user=>[:rememberable, :database_authenticatable]}, :intercept_401=>false, :failure_app=>#<Devise::Delegator:0x00007fa4e14d3888>}
  
   + Body
