@@ -4,6 +4,7 @@ module Api
       before_action :authenticate_user!
 
       def index
+        #RentMailer.new_mail.deliver_later
         @rent = User.find(params[:user_id]).rents
         authorize @rent
         render_paginated @rent, each_serializer: RentSerializer
