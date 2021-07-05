@@ -32,5 +32,8 @@ module MeRails
         methods: [:get, :post, :options, :delete, :put, :patch]
       end
     end
+
+    config.active_job.queue_adapter = :sidekiq
+    
   end
 end
