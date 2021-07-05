@@ -2,7 +2,8 @@ module Api
   module V1
     class BookSuggestionController < ApplicationController
       def create
-        return user_not_found if params[:user_id].present? && !User.exists?(params[:user_id]) 
+        return user_not_found if params[:user_id].present? && !User.exists?(params[:user_id])
+
         BookSuggestion.create!(book_suggestion_params)
         head :created
       end
@@ -14,7 +15,7 @@ module Api
       end
 
       def user_not_found
-        render json: { error: "User not found" }, status: :unprocessable_entity 
+        render json: { error: 'User not found' }, status: :unprocessable_entity
       end
 
     end
