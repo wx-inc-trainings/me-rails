@@ -1,0 +1,22 @@
+p 
+    = "Rent created at: #{@rent.created_at}" 
+
+div
+    h1 Details of book
+    p
+        = "Title: #{@book.title}"
+        br
+        = "Author: #{@book.author}"
+        br
+        = "Genre: #{@book.genre}"
+        br
+        = "Editor: #{@book.editor}"
+        br
+        = "Year: #{@book.year}"
+
+    h1 Rent 
+    p 
+        = "From: #{@rent.start_date}"
+        br
+        = "To: #{@rent.end_date}"
+

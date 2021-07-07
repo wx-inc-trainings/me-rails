@@ -1,7 +1,11 @@
 class RentMailer < ApplicationMailer
-  def new_mail
-    @rent = params(:rent)
-    mail(to: 'mailtest@test.com', subject: 'You got a new order!')
+  default from: Rails.application.secrets.email_notify 
+
+  def new_rent
+    @rent = params[:rent]
+    @book = @rent.book
+    email = @rent.user.email
+    mail(to: email, subject: 'You got a new rent!')
   end
 
 end

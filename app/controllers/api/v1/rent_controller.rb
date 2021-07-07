@@ -14,7 +14,7 @@ module Api
         @rent.user_id = params[:user_id]
         authorize @rent
         @rent.save!
-        RentWorker.perform_async(@rent)
+        RentWorker.perform_async(@rent.id)
         render json: RentSerializer.new.serialize(@rent).to_json, status: :created
       end
 

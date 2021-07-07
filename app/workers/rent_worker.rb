@@ -3,7 +3,7 @@ class RentWorker
 
   def perform(id_rent)
     rent = Rent.find(id_rent)
-    RentMailer.with(rent: rent).new_mail.deliver_later
+    RentMailer.with(rent: rent).new_rent.deliver_later
   end
 
 end
