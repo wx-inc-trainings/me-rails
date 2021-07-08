@@ -1,5 +1,5 @@
 class RentMailer < ApplicationMailer
-  default from: Rails.application.secrets.email_notify 
+  default from: Rails.application.secrets.email_notify
 
   def new_rent
     @rent = params[:rent]
