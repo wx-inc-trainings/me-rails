@@ -6,6 +6,8 @@ require "rails/all"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+Dotenv::Railtie.load
+
 module MeRails
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
@@ -30,5 +32,8 @@ module MeRails
         methods: [:get, :post, :options, :delete, :put, :patch]
       end
     end
+
+    config.active_job.queue_adapter = :sidekiq
+    
   end
 end
