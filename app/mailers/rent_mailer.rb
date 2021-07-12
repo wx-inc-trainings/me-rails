@@ -8,4 +8,9 @@ class RentMailer < ApplicationMailer
     mail(to: email, subject: 'You got a new rent!')
   end
 
+  def finished_rent
+    @book_title = params[:book_title]
+    mail(to: params[:email], subject: 'Your rent has finished')
+  end
+
 end

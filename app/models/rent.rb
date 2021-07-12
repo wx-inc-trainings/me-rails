@@ -10,4 +10,6 @@ class Rent < ApplicationRecord
                                    .order(end_date: :asc)
                                }
 
+  scope :rents_finished, -> { where(end_date: Time.now.to_date).where(returned_at: nil) }
+
 end
