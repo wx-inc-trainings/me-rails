@@ -80,5 +80,4 @@ RSpec.describe BookSuggestion, type: :model do
       end
     end
   end
-  
 end

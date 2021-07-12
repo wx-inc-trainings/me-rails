@@ -1,7 +1,7 @@
 require 'rails_helper'
 require 'json'
 
-RSpec.describe Api::OpenLibraryController, type: :controller do
+RSpec.describe Api::V1::OpenLibraryController, type: :controller do
   describe action 'GET #show' do
     before { get :show, params: { isbn: isbn }, format: :json }
 

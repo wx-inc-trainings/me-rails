@@ -6,7 +6,7 @@
     "version": "1"
   },
   "paths": {
-    "/api/book": {
+    "/api/v1/book": {
       "description": "",
       "get": {
         "tags": [
@@ -21,7 +21,7 @@
             "description": "with valid value {}",
             "content": {
               "application/json": {
-                "example": "{\"author\":\"Mitchell Fay II\",\"title\":\"This Side of Paradise\",\"genre\":\"Mystery\",\"editor\":\"University of Nebraska Press\",\"year\":\"1369\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"this-side-of-paradise\"}"
+                "example": "{\"author\":\"Laquanda Torp\",\"title\":\"When the Green Woods Laugh\",\"genre\":\"Mythopoeia\",\"editor\":\"Gefen Publishing House\",\"year\":\"1469\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"when-the-green-woods-laugh\",\"times_rented\":\"0\"}"
               }
             }
           },
@@ -29,7 +29,7 @@
             "description": "with invalid value {}",
             "content": {
               "application/json": {
-                "example": "{\"error\":\"can't find record with friendly id: \\\"ullam_doloremque\\\"\"}"
+                "example": "{\"error\":\"can't find record with friendly id: \\\"error_necessitatibus\\\"\"}"
               }
             }
           }
@@ -37,7 +37,7 @@
         "deprecated": false
       }
     },
-    "/api/book_suggestion": {
+    "/api/v1/book_suggestion": {
       "description": "",
       "post": {
         "tags": [
@@ -50,7 +50,7 @@
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
-              "example": "author=Rev.+Jennell+Jakubowski&editor=Carlton+Publishing+Group&link=http%3A%2F%2Fhermann.co%2Frusty&title=Pale+Kings+and+Princes&year=1409"
+              "example": "author=Arlie+Kunde&editor=Atheneum+Books&link=http%3A%2F%2Fwolff.info%2Fkaterine&title=Blithe+Spirit&year=1496"
             }
           }
         },
@@ -58,16 +58,16 @@
           "default": {
             "description": "alone with valid parameters required {}",
             "content": {
-              "application/json": {
-                "example": "{\"message\":\"Book Suggestion created\"}"
+              "text/html": {
+                "example": ""
               }
             }
           },
           "201": {
             "description": "with valid synopsis param {}",
             "content": {
-              "application/json": {
-                "example": "{\"message\":\"Book Suggestion created\"}"
+              "text/html": {
+                "example": ""
               }
             }
           },
@@ -99,7 +99,7 @@
         "deprecated": false
       }
     },
-    "/api/open_library": {
+    "/api/v1/open_library": {
       "description": "",
       "get": {
         "tags": [

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Api::BookSuggestionController, type: :controller do
+RSpec.describe Api::V1::BookSuggestionController, type: :controller do
   describe action 'POST #create' do
     before { post :create, params: book_suggestion_params }
 
