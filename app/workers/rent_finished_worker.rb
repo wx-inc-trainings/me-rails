@@ -6,4 +6,5 @@ class RentFinishedWorker
   def perform(email, book_title)
     RentMailer.with(email: email, book_title: book_title).finished_rent.deliver_later
   end
+
 end
