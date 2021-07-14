@@ -1,0 +1,5 @@
+:schedule:
+  rents_finished:
+    cron: '0 9 * * * America/Argentina/Buenos_Aires'   
+    class: RentsFinishedWorker
+    description: "This job execute daily 9:00 AM GMT-3"
