@@ -5,12 +5,12 @@ class RentMailer < ApplicationMailer
     @rent = params[:rent]
     @book = @rent.book
     email = @rent.user.email
-    mail(to: email, subject: 'You got a new rent!')
+    mail(to: email, subject: t('new_rent_mail.subject'))
   end
 
   def finished_rent
     @book_title = params[:book_title]
-    mail(to: params[:email], subject: 'Your rent has finished')
+    mail(to: params[:email], subject: t('finished_rent_mail.subject'))
   end
 
 end

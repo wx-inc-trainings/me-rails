@@ -1,14 +1,20 @@
-= "Rent created at: #{ @rent.created_at } \n" 
-= "----------------------------------------------\n"
-= "Details of book \n"
-= "Title: #{@book.title} \n"
-= "Author: #{@book.author}\n"
-= "Genre: #{@book.genre}\n"
-= "Editor: #{@book.editor}\n"
-= "Year: #{@book.year}\n"
-
-= "----------------------------------------------\n"
-= "Rent \n" 
-= "From: #{@rent.start_date}\n"
-= "To: #{@rent.end_date}\n"
+= t('new_rent_mail.created_at', created_at: @rent.created_at) 
+= "\n----------------------------------------------\n"        
+= t('new_rent_mail.details_of_book')
+= "\n"
+= t('new_rent_mail.title', title: @book.title)
+= "\n"
+= t('new_rent_mail.author', author: @book.author)
+= "\n"
+= t('new_rent_mail.genre', genre: @book.genre)
+= "\n"
+= t('new_rent_mail.editor', editor: @book.editor)
+= "\n"
+= t('new_rent_mail.year', year: @book.year)
+= "\n----------------------------------------------\n"
+= t('new_rent_mail.rent') 
+= "\n"
+= t('new_rent_mail.from', start_date: @rent.start_date)
+= "\n"
+= t('new_rent_mail.to', end_date: @rent.end_date)
 

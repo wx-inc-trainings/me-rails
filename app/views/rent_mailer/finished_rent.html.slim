@@ -1,7 +1,5 @@
 h1 
-    = "Your rent has finished"
+    = t('finished_rent_mail.title_mail')
 
 p 
-    = "Your book " 
-    b = "#{@book_title} "
-    = "will end today"
+    = t('finished_rent_mail.body', book_title: @book_title)
