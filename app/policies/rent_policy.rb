@@ -1,6 +1,6 @@
-class RentPolicy < ApplicationPolicy  
+class RentPolicy < ApplicationPolicy
   def index?
-    record.all?{ |u| u.user_id == user.id }
+    record.all? { |u| u.user_id == user.id }
   end
 
   def create?
