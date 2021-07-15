@@ -1,6 +1,5 @@
 p 
     = t('new_rent_mail.created_at', created_at: @rent.created_at) 
-
 div
     h1 
         = t('new_rent_mail.details_of_book')
@@ -21,4 +20,3 @@ div
         = t('new_rent_mail.from', start_date: @rent.start_date)
         br
         = t('new_rent_mail.to', end_date: @rent.end_date)
-

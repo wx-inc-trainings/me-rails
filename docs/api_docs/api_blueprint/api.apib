@@ -62,11 +62,331 @@ Handles api book.
             client: PfDjs2QVUEE9u_xDP3c4RA
             expiry: 1626030536
             uid: danilo.pollich@johns-weimann.net
+  + Body
+
+      ```
+      {"author":"Laquanda Torp","title":"When the Green Woods Laugh","genre":"Mythopoeia","editor":"Gefen Publishing House","year":"1469","image":"https://loremflickr.com/50/60","slug":"when-the-green-woods-laugh","times_rented":"0"}
+      ```
+
+
++ Response 404 (application/json)
  
   + Body
 
       ```
       {"author":"Laquanda Torp","title":"When the Green Woods Laugh","genre":"Mythopoeia","editor":"Gefen Publishing House","year":"1469","image":"https://loremflickr.com/50/60","slug":"when-the-green-woods-laugh","times_rented":"0"}
+      {"error":"can't find record with friendly id: \"error_necessitatibus\""}
+      ```
+
+
+# Book suggestions [/api/v1/book_suggestion]
+Handles api book_suggestion.
+
+
+## Create a new book suggestion. [POST ]
+
++ Request alone with valid parameters required {} 
+ 
+  + Header
+  
+            warden: Warden::Proxy:72720 @config={:default_scope=>:user, :scope_defaults=>{}, :default_strategies=>{:user=>[:rememberable, :database_authenticatable]}, :intercept_401=>false, :failure_app=>#<Devise::Delegator:0x00007fa4e14d3888>}
+ 
+  + Body
+
+      ```
+      author=Arlie+Kunde&editor=Atheneum+Books&link=http%3A%2F%2Fwolff.info%2Fkaterine&title=Blithe+Spirit&year=1496
+      ```
+
+
++ Response 201 (text/html)
+
+  + Body
+
++ Request with valid authenticated user {} 
+ 
+  + Header
+
+            warden: Warden::Proxy:72740 @config={:default_scope=>:user, :scope_defaults=>{}, :default_strategies=>{:user=>[:rememberable, :database_authenticatable]}, :intercept_401=>false, :failure_app=>#<Devise::Delegator:0x00007fa4e14d3888>}
+            ACCESS-TOKEN: ZljlEO__Q3Ql-zo6xNlwYw
+            TOKEN-TYPE: Bearer
+            CLIENT: eA1aPoLaAKkgRGgZ4uEOrw
+            EXPIRY: 1626030539
+            UID: bell_graham@lowe.name
+ 
+  + Body
+
+      ```
+      author=Ron+Jones&editor=Blackstaff+Press&link=http%3A%2F%2Fwindler-waters.io%2Fkorey&title=Quo+Vadis&user_id=17&year=1892
+      ```
+
+
++ Response 201 (text/html)
+
+  + Body
+
++ Request with valid price param {} 
+ 
+  + Header
+
+            warden: Warden::Proxy:72760 @config={:default_scope=>:user, :scope_defaults=>{}, :default_strategies=>{:user=>[:rememberable, :database_authenticatable]}, :intercept_401=>false, :failure_app=>#<Devise::Delegator:0x00007fa4e14d3888>}
+ 
+  + Body
+
+      ```
+      author=Candi+Upton&editor=Velazquez+Press&link=http%3A%2F%2Fglover.co%2Flenore_corkery&price=1.64&title=The+Other+Side+of+Silence&year=1010
+      ```
+
+
++ Response 201 (text/html)
+
+  + Body
+
++ Request with valid synopsis param {} 
+ 
+  + Header
+            warden: Warden::Proxy:72780 @config={:default_scope=>:user, :scope_defaults=>{}, :default_strategies=>{:user=>[:rememberable, :database_authenticatable]}, :intercept_401=>false, :failure_app=>#<Devise::Delegator:0x00007fa4e14d3888>}
+  + Body
+
+      ```
+      author=Rep.+Sterling+Beatty&editor=George+Routledge+%26+Sons&link=http%3A%2F%2Fhintz-zboncak.name%2Fjame_kihn&synopsis=Qui+sunt+et.+Id+sunt+mollitia.+Illum+cupiditate+dolores.&title=Ring+of+Bright+Water&year=1432
+      ```
+
+
++ Response 201 (text/html)
+
+  + Body
+
++ Response 422 (application/json)
+ 
+  + Body
+
+      ```
+      {"error":{"title":["can't be blank"],"editor":["can't be blank"],"link":["is invalid","can't be blank"],"year":["is not a number","is too short (minimum is 1 character)","can't be blank"],"author":["is invalid","can't be blank"]}}
+      ```
+
+
++ Request with invalid param {} 
+ 
+  + Header
+            warden: Warden::Proxy:72800 @config={:default_scope=>:user, :scope_defaults=>{}, :default_strategies=>{:user=>[:rememberable, :database_authenticatable]}, :intercept_401=>false, :failure_app=>#<Devise::Delegator:0x00007fa4e14d3888>}
+ 
+  + Body
+
+      ```
+      lorem=lorem
+      ```
+
+
++ Response 400 (application/json)
+ 
+  + Body
+
+      ```
+      {"error":"found unpermitted parameter: :lorem"}
+      ```
+
+
++ Request with invalid param user_id {} 
+ 
+  + Header
+            warden: Warden::Proxy:72820 @config={:default_scope=>:user, :scope_defaults=>{}, :default_strategies=>{:user=>[:rememberable, :database_authenticatable]}, :intercept_401=>false, :failure_app=>#<Devise::Delegator:0x00007fa4e14d3888>}
+ 
+  + Body
+
+      ```
+      user_id=a
+      ```
+
+
++ Response 404 (application/json)
+ 
+  + Body
+
+      ```
+      {"error":"can't find record with friendly id: \"error_necessitatibus\""}
+      ```
+
+
+# Book suggestions [/api/v1/book_suggestion]
+Handles api book_suggestion.
+
+
+## Create a new book suggestion. [POST ]
+
++ Request alone with valid parameters required {} 
+ 
+  + Header
+            warden: Warden::Proxy:72720 @config={:default_scope=>:user, :scope_defaults=>{}, :default_strategies=>{:user=>[:rememberable, :database_authenticatable]}, :intercept_401=>false, :failure_app=>#<Devise::Delegator:0x00007fa4e14d3888>}
+  + Body
+
+      ```
+      author=Arlie+Kunde&editor=Atheneum+Books&link=http%3A%2F%2Fwolff.info%2Fkaterine&title=Blithe+Spirit&year=1496
+      ```
+
+
++ Response 201 (text/html)
+
+  + Body
+
++ Request with valid authenticated user {} 
+ 
+  + Header
+
+            warden: Warden::Proxy:72740 @config={:default_scope=>:user, :scope_defaults=>{}, :default_strategies=>{:user=>[:rememberable, :database_authenticatable]}, :intercept_401=>false, :failure_app=>#<Devise::Delegator:0x00007fa4e14d3888>}
+            ACCESS-TOKEN: ZljlEO__Q3Ql-zo6xNlwYw
+            TOKEN-TYPE: Bearer
+            CLIENT: eA1aPoLaAKkgRGgZ4uEOrw
+            EXPIRY: 1626030539
+            UID: bell_graham@lowe.name
+ 
+  + Body
+
+      ```
+      author=Ron+Jones&editor=Blackstaff+Press&link=http%3A%2F%2Fwindler-waters.io%2Fkorey&title=Quo+Vadis&user_id=17&year=1892
+      ```
+
+
++ Response 201 (text/html)
+
+  + Body
+
++ Request with valid price param {} 
+ 
+  + Header
+
+            warden: Warden::Proxy:72760 @config={:default_scope=>:user, :scope_defaults=>{}, :default_strategies=>{:user=>[:rememberable, :database_authenticatable]}, :intercept_401=>false, :failure_app=>#<Devise::Delegator:0x00007fa4e14d3888>}
+ 
+  + Body
+
+      ```
+      author=Candi+Upton&editor=Velazquez+Press&link=http%3A%2F%2Fglover.co%2Flenore_corkery&price=1.64&title=The+Other+Side+of+Silence&year=1010
+      ```
+
+
++ Response 201 (text/html)
+
+  + Body
+
++ Request with valid synopsis param {} 
+ 
+  + Header
+
+            warden: Warden::Proxy:72780 @config={:default_scope=>:user, :scope_defaults=>{}, :default_strategies=>{:user=>[:rememberable, :database_authenticatable]}, :intercept_401=>false, :failure_app=>#<Devise::Delegator:0x00007fa4e14d3888>}
+ 
+  + Body
+
+      ```
+      author=Rep.+Sterling+Beatty&editor=George+Routledge+%26+Sons&link=http%3A%2F%2Fhintz-zboncak.name%2Fjame_kihn&synopsis=Qui+sunt+et.+Id+sunt+mollitia.+Illum+cupiditate+dolores.&title=Ring+of+Bright+Water&year=1432
+      ```
+
+
++ Response 201 (text/html)
+
+  + Body
+
++ Response 422 (application/json)
+ 
+  + Body
+
+      ```
+      {"error":{"title":["can't be blank"],"editor":["can't be blank"],"link":["is invalid","can't be blank"],"year":["is not a number","is too short (minimum is 1 character)","can't be blank"],"author":["is invalid","can't be blank"]}}
+      ```
+
+
++ Request with invalid param {} 
+ 
+  + Header
+
+            warden: Warden::Proxy:72800 @config={:default_scope=>:user, :scope_defaults=>{}, :default_strategies=>{:user=>[:rememberable, :database_authenticatable]}, :intercept_401=>false, :failure_app=>#<Devise::Delegator:0x00007fa4e14d3888>}
+ 
+  + Body
+
+      ```
+      lorem=lorem
+      ```
+
+
++ Response 400 (application/json)
+ 
+  + Body
+
+      ```
+      {"author":"Laquanda Torp","title":"When the Green Woods Laugh","genre":"Mythopoeia","editor":"Gefen Publishing House","year":"1469","image":"https://loremflickr.com/50/60","slug":"when-the-green-woods-laugh","times_rented":"0"}
+      {"error":"found unpermitted parameter: :lorem"}
+      ```
+
+
++ Request with invalid param user_id {} 
+ 
+  + Header
+
+            warden: Warden::Proxy:72820 @config={:default_scope=>:user, :scope_defaults=>{}, :default_strategies=>{:user=>[:rememberable, :database_authenticatable]}, :intercept_401=>false, :failure_app=>#<Devise::Delegator:0x00007fa4e14d3888>}
+ 
+  + Body
+
+      ```
+      author=Candi+Upton&editor=Velazquez+Press&link=http%3A%2F%2Fglover.co%2Flenore_corkery&price=1.64&title=The+Other+Side+of+Silence&year=1010
+      ```
+
+
++ Response 201 (text/html)
+
+  + Body
+
++ Request with valid synopsis param {} 
+ 
+  + Header
+            warden: Warden::Proxy:72780 @config={:default_scope=>:user, :scope_defaults=>{}, :default_strategies=>{:user=>[:rememberable, :database_authenticatable]}, :intercept_401=>false, :failure_app=>#<Devise::Delegator:0x00007fa4e14d3888>}
+  + Body
+
+      ```
+      author=Rep.+Sterling+Beatty&editor=George+Routledge+%26+Sons&link=http%3A%2F%2Fhintz-zboncak.name%2Fjame_kihn&synopsis=Qui+sunt+et.+Id+sunt+mollitia.+Illum+cupiditate+dolores.&title=Ring+of+Bright+Water&year=1432
+      ```
+
+
++ Response 201 (text/html)
+
+  + Body
+
++ Response 422 (application/json)
+ 
+  + Body
+
+      ```
+      {"error":{"title":["can't be blank"],"editor":["can't be blank"],"link":["is invalid","can't be blank"],"year":["is not a number","is too short (minimum is 1 character)","can't be blank"],"author":["is invalid","can't be blank"]}}
+      ```
+
+
++ Request with invalid param {} 
+ 
+  + Header
+            warden: Warden::Proxy:72800 @config={:default_scope=>:user, :scope_defaults=>{}, :default_strategies=>{:user=>[:rememberable, :database_authenticatable]}, :intercept_401=>false, :failure_app=>#<Devise::Delegator:0x00007fa4e14d3888>}
+ 
+  + Body
+
+      ```
+      lorem=lorem
+      ```
+
+
++ Response 400 (application/json)
+ 
+  + Body
+
+      ```
+      {"error":"found unpermitted parameter: :lorem"}
+      ```
+
+
++ Request with invalid param user_id {} 
+ 
+  + Header
+            warden: Warden::Proxy:72820 @config={:default_scope=>:user, :scope_defaults=>{}, :default_strategies=>{:user=>[:rememberable, :database_authenticatable]}, :intercept_401=>false, :failure_app=>#<Devise::Delegator:0x00007fa4e14d3888>}
+ 
+  + Body
+
+      ```
+      user_id=a
       ```
 
 
