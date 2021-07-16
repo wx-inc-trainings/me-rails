@@ -5,7 +5,9 @@ class Book < ApplicationRecord
 
   has_many :rents
 
-  validates :image, :title, :editor, presence: true
+  validates :image, :editor, presence: true
+
+  validates :title, length: { maximum: 25 }
 
   validates :year, numericality: { only_integer: true }, length: { is: 4 }, presence: true
 
