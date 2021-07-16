@@ -53,6 +53,18 @@ ActiveRecord::Schema.define(version: 2021_07_16_004416) do
     t.index ["sluggable_type", "sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_type_and_sluggable_id"
   end
 
+  create_table "rents", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "book_id", null: false
+    t.date "start_date"
+    t.date "end_date"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.date "returned_at"
+    t.index ["book_id"], name: "index_rents_on_book_id"
+    t.index ["user_id"], name: "index_rents_on_user_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "provider", default: "email", null: false
     t.string "uid", default: "", null: false
@@ -79,4 +91,6 @@ ActiveRecord::Schema.define(version: 2021_07_16_004416) do
   end
 
   add_foreign_key "book_suggestions", "users"
+  add_foreign_key "rents", "books"
+  add_foreign_key "rents", "users"
 end
