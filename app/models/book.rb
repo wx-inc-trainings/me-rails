@@ -1,11 +1,13 @@
 class Book < ApplicationRecord
+  before_save :normalize_title
+
   extend FriendlyId
 
   friendly_id :title, use: :slugged
 
   has_many :rents
 
-  validates :image, :title, :editor, presence: true
+  validates :image, :editor, :title, presence: true
 
   validates :year, numericality: { only_integer: true }, length: { is: 4 }, presence: true
 
@@ -16,6 +18,14 @@ class Book < ApplicationRecord
 
   def should_generate_new_friendly_id?
     title_changed?
+  end
+
+  def normalize_title
+    if title.length >= 25
+      self.title = title[0..21] + "..."
+    else
+      self.title = title
+    end
   end
 
 end
