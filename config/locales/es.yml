@@ -1,0 +1,23 @@
+es:
+  errors:
+    not_authorize: "no estás autorizado para realizar esta acción."
+    unpermitted_parameters: "parámetro no permitido encontrado: %{params}"
+    not_found: "no existe ningun registro"
+
+  new_rent_mail:
+    subject: "¡Tienes un nuevo alquiler!"
+    details_of_book: "Detalles del libro"
+    rent: "Alquiler"
+    created_at: "Alquiler creado en: %{created_at}" 
+    title: "Titulo: %{title}"  
+    author: "Autor: %{author}"  
+    genre: "Genero: %{genre}"  
+    editor: "Editor %{editor}"  
+    year: "Año: %{year}"
+    from: "Desde: %{start_date}"  
+    to: "Hasta: %{end_date}"
+  
+  finished_rent_mail:
+    subject: "¡Tu alquiler ha terminado!"
+    title_mail: "Tu alquiler ha finalizado"
+    body: "Tu libro %{book_title} ha finalizado el dia de hoy"

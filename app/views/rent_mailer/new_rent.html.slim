@@ -1,22 +1,22 @@
 p 
-    = "Rent created at: #{@rent.created_at}" 
-
+    = t('new_rent_mail.created_at', created_at: @rent.created_at) 
 div
-    h1 Details of book
+    h1 
+        = t('new_rent_mail.details_of_book')
     p
-        = "Title: #{@book.title}"
+        = t('new_rent_mail.title', title: @book.title)
         br
-        = "Author: #{@book.author}"
+        = t('new_rent_mail.author', author: @book.author)
         br
-        = "Genre: #{@book.genre}"
+        = t('new_rent_mail.genre', genre: @book.genre)
         br
-        = "Editor: #{@book.editor}"
+        = t('new_rent_mail.editor', editor: @book.editor)
         br
-        = "Year: #{@book.year}"
+        = t('new_rent_mail.year', year: @book.year)
 
-    h1 Rent 
+    h1 
+        = t('new_rent_mail.rent')
     p 
-        = "From: #{@rent.start_date}"
+        = t('new_rent_mail.from', start_date: @rent.start_date)
         br
-        = "To: #{@rent.end_date}"
-
+        = t('new_rent_mail.to', end_date: @rent.end_date)

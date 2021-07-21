@@ -30,4 +30,25 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  errors:
+    not_authorize: "you are not authorized to perform this action"
+    unpermitted_parameters: "found unpermitted parameter: %{params}"
+    not_found: "not record exists"
+
+  new_rent_mail:
+    subject: "You got a new rent!"
+    details_of_book: "Details of book"
+    rent: "Rent"
+    created_at: "Rent created at: %{created_at}" 
+    title: "Title: %{title}"  
+    author: "Author: %{author}"  
+    genre: "Genre: %{genre}"  
+    editor: "Editor %{editor}"  
+    year: "Year: %{year}"
+    from: "From: %{start_date}"  
+    to: "To: %{end_date}"
+
+  finished_rent_mail:
+    subject: "Your rent has finished!"
+    title: "Your rent has finished"
+    body: "Your book %{book_title} will end today"
