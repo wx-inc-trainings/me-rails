@@ -21,11 +21,11 @@ class Book < ApplicationRecord
   end
 
   def normalize_title
-    if title.length >= 25
-      self.title = title[0..21] + "..."
-    else
-      self.title = title
-    end
+    self.title = if title.length >= 25
+                   "#{title[0..21]}..."
+                 else
+                   title
+                 end
   end
 
 end

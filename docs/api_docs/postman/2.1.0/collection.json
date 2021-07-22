@@ -90,7 +90,7 @@
               "status": "[200] without filter {}",
               "name": "[200] without filter {}",
               "code": 200,
-              "body": "{\"page\":[{\"author\":\"Wiley Schiller Jr.\",\"title\":\"In a Glass Darkly\",\"genre\":\"Mythology\",\"editor\":\"Burns \\u0026 Oates\",\"year\":\"1540\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"in-a-glass-darkly\",\"times_rented\":\"0\"},{\"author\":\"Fr. Arden Reichel\",\"title\":\"No Country for Old Men\",\"genre\":\"Mythology\",\"editor\":\"Darakwon Press\",\"year\":\"1650\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"no-country-for-old-men\",\"times_rented\":\"0\"},{\"author\":\"Carol Gleichner\",\"title\":\"Little Hands Clapping\",\"genre\":\"Textbook\",\"editor\":\"SAGE Publications\",\"year\":\"1871\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"little-hands-clapping\",\"times_rented\":\"0\"},{\"author\":\"Ashley Stoltenberg\",\"title\":\"The Proper Study\",\"genre\":\"Realistic fiction\",\"editor\":\"Book Works\",\"year\":\"1498\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"the-proper-study\",\"times_rented\":\"0\"},{\"author\":\"Bradley Walter\",\"title\":\"Eyeless in Gaza\",\"genre\":\"Tall tale\",\"editor\":\"Horizon Scientific Press\",\"year\":\"1524\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"eyeless-in-gaza\",\"times_rented\":\"0\"}],\"count\":5,\"total_pages\":1,\"total_count\":5,\"current_page\":1,\"previous_page\":null,\"next_page\":null,\"next_page_url\":null,\"previous_page_url\":null}",
+              "body": "{\"page\":[{\"author\":\"Claud Ledner Jr.\",\"title\":\"A Handful of Dust\",\"genre\":\"Suspense/Thriller\",\"editor\":\"Kogan Page\",\"year\":\"1537\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"a-handful-of-dust\",\"times_rented\":0},{\"author\":\"Gail Muller\",\"title\":\"Some Buried Caesar\",\"genre\":\"Classic\",\"editor\":\"Atheneum Publishers\",\"year\":\"1552\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"some-buried-caesar\",\"times_rented\":0},{\"author\":\"Edmund Beahan\",\"title\":\"Sleep the Brave\",\"genre\":\"Essay\",\"editor\":\"Banner of Truth Trust\",\"year\":\"1794\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"sleep-the-brave\",\"times_rented\":0},{\"author\":\"Harley Bosco VM\",\"title\":\"Françoise Sagan\",\"genre\":\"Fiction narrative\",\"editor\":\"Open University Press\",\"year\":\"1103\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"francoise-sagan\",\"times_rented\":0},{\"author\":\"Magdalena Hoeger\",\"title\":\"After Many a Summer Di...\",\"genre\":\"Classic\",\"editor\":\"E. P. Dutton\",\"year\":\"1195\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"after-many-a-summer-di\",\"times_rented\":0}],\"count\":5,\"total_pages\":1,\"total_count\":5,\"current_page\":1,\"previous_page\":null,\"next_page\":null,\"next_page_url\":null,\"previous_page_url\":null}",
               "header": [
                 {
                   "key": "Content-Type",
@@ -101,7 +101,7 @@
             {
               "originalRequest": {
                 "url": {
-                  "raw": "http://localhost:3000/api/v1/book?author=Arnold+Cummerata&genre=Short+story&title=No+Country+for+Old+Men",
+                  "raw": "http://localhost:3000/api/v1/book?author=Kristy+Schroeder+VM&genre=Speech&title=The+Curious+Incident+o...",
                   "host": [
                     "http://localhost:3000"
                   ],
@@ -113,15 +113,15 @@
                   "query": [
                     {
                       "key": "author",
-                      "value": "\"Arnold Cummerata\""
+                      "value": "\"Kristy Schroeder VM\""
                     },
                     {
                       "key": "genre",
-                      "value": "\"Short story\""
+                      "value": "\"Speech\""
                     },
                     {
                       "key": "title",
-                      "value": "\"No Country for Old Men\""
+                      "value": "\"The Curious Incident o...\""
                     }
                   ],
                   "variable": [
@@ -138,7 +138,7 @@
               "status": "[200] with filter {}",
               "name": "[200] with filter {}",
               "code": 200,
-              "body": "{\"page\":[{\"author\":\"Arnold Cummerata\",\"title\":\"No Country for Old Men\",\"genre\":\"Short story\",\"editor\":\"Del Rey Books\",\"year\":\"1556\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"no-country-for-old-men\",\"times_rented\":\"0\"}],\"count\":1,\"total_pages\":1,\"total_count\":1,\"current_page\":1,\"previous_page\":null,\"next_page\":null,\"next_page_url\":null,\"previous_page_url\":null}",
+              "body": "{\"page\":[{\"author\":\"Kristy Schroeder VM\",\"title\":\"The Curious Incident o...\",\"genre\":\"Speech\",\"editor\":\"Dedalus Books\",\"year\":\"1821\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"the-curious-incident-o\",\"times_rented\":0}],\"count\":1,\"total_pages\":1,\"total_count\":1,\"current_page\":1,\"previous_page\":null,\"next_page\":null,\"next_page_url\":null,\"previous_page_url\":null}",
               "header": [
                 {
                   "key": "Content-Type",
@@ -206,7 +206,7 @@
               "status": "[200] with valid value {}",
               "name": "[200] with valid value {}",
               "code": 200,
-              "body": "{\"author\":\"Laquanda Torp\",\"title\":\"When the Green Woods Laugh\",\"genre\":\"Mythopoeia\",\"editor\":\"Gefen Publishing House\",\"year\":\"1469\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"when-the-green-woods-laugh\",\"times_rented\":\"0\"}",
+              "body": "{\"author\":\"Bud Langosh V\",\"title\":\"All the King's Men\",\"genre\":\"Comic/Graphic Novel\",\"editor\":\"Nauka\",\"year\":\"1085\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"all-the-king-s-men\",\"times_rented\":0}",
               "header": [
                 {
                   "key": "Content-Type",
@@ -243,7 +243,7 @@
               "status": "[404] with invalid value {}",
               "name": "[404] with invalid value {}",
               "code": 404,
-              "body": "{\"error\":\"can't find record with friendly id: \\\"error_necessitatibus\\\"\"}",
+              "body": "{\"error\":\"not record exists\"}",
               "header": [
                 {
                   "key": "Content-Type",
@@ -291,7 +291,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "author=Arlie+Kunde&editor=Atheneum+Books&link=http%3A%2F%2Fwolff.info%2Fkaterine&title=Blithe+Spirit&year=1496"
+              "raw": "author=Ulysses+Volkman+I&editor=Gay+Men%27s+Press&link=http%3A%2F%2Fking.biz%2Frossana.murphy&title=Look+Homeward%2C+Angel&year=1320"
             }
           },
           "response": [
@@ -324,7 +324,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "author=Arlie+Kunde&editor=Atheneum+Books&link=http%3A%2F%2Fwolff.info%2Fkaterine&title=Blithe+Spirit&year=1496"
+                  "raw": "author=Ulysses+Volkman+I&editor=Gay+Men%27s+Press&link=http%3A%2F%2Fking.biz%2Frossana.murphy&title=Look+Homeward%2C+Angel&year=1320"
                 }
               },
               "responseTime": null,
@@ -367,7 +367,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "author=Ron+Jones&editor=Blackstaff+Press&link=http%3A%2F%2Fwindler-waters.io%2Fkorey&title=Quo+Vadis&user_id=17&year=1892"
+                  "raw": "author=Paul+Jacobson+I&editor=Brimstone+Press&link=http%3A%2F%2Fbernier-kuphal.info%2Fharry&title=Now+Sleeps+the+Crimson+Petal&user_id=17&year=1495"
                 }
               },
               "responseTime": null,
@@ -410,7 +410,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "author=Candi+Upton&editor=Velazquez+Press&link=http%3A%2F%2Fglover.co%2Flenore_corkery&price=1.64&title=The+Other+Side+of+Silence&year=1010"
+                  "raw": "author=Cassi+Runolfsdottir&editor=Felony+%26+Mayhem+Press&link=http%3A%2F%2Ftoy.biz%2Fcory_goodwin&price=41.57&title=The+Violent+Bear+It+Away&year=1414"
                 }
               },
               "responseTime": null,
@@ -453,7 +453,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "author=Rep.+Sterling+Beatty&editor=George+Routledge+%26+Sons&link=http%3A%2F%2Fhintz-zboncak.name%2Fjame_kihn&synopsis=Qui+sunt+et.+Id+sunt+mollitia.+Illum+cupiditate+dolores.&title=Ring+of+Bright+Water&year=1432"
+                  "raw": "author=Prof.+Brant+Corwin&editor=Mapin+Publishing&link=http%3A%2F%2Fcummerata-schowalter.io%2Fdale&synopsis=Maiores+ullam+doloribus.+Molestiae+repudiandae+delectus.+Corrupti+saepe+dignissimos.&title=Fran%C3%A7oise+Sagan&year=1241"
                 }
               },
               "responseTime": null,
@@ -543,7 +543,7 @@
               "status": "[400] with invalid param {}",
               "name": "[400] with invalid param {}",
               "code": 400,
-              "body": "{\"error\":\"found unpermitted parameter: :lorem\"}",
+              "body": "{\"error\":\"found unpermitted parameter: lorem\"}",
               "header": [
                 {
                   "key": "Content-Type",
@@ -584,10 +584,10 @@
                 }
               },
               "responseTime": null,
-              "status": "[404] with invalid param user_id {}",
-              "name": "[404] with invalid param user_id {}",
-              "code": 404,
-              "body": "{\"error\":\"Couldn't find User with 'id'=a\"}",
+              "status": "[422] with invalid param user_id {}",
+              "name": "[422] with invalid param user_id {}",
+              "code": 422,
+              "body": "{\"error\":\"User not found\"}",
               "header": [
                 {
                   "key": "Content-Type",

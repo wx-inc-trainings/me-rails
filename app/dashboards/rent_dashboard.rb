@@ -1,4 +1,4 @@
-require "administrate/base_dashboard"
+require 'administrate/base_dashboard'
 
 class RentDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
@@ -15,7 +15,7 @@ class RentDashboard < Administrate::BaseDashboard
     end_date: Field::Date,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
-    returned_at: Field::Date,
+    returned_at: Field::Date
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -72,4 +72,5 @@ class RentDashboard < Administrate::BaseDashboard
   # def display_resource(rent)
   #   "Rent ##{rent.id}"
   # end
+
 end

@@ -9,14 +9,13 @@ module Admin
     before_action :authenticate_admin
 
     def authenticate_admin
-      redirect_to auth_login_form_path unless !!current_user
-      if current_user.role != "admin"
-        render 'error/page_401'
-      end
-      current_user.role == "admin"
+      redirect_to auth_login_form_path if current_user.nil?
+      render 'error/page_401' if current_user.role != 'admin'
+      current_user.role == 'admin'
     end
 
     protected
+
     def current_user
       @current_user ||= User.find_by_id(session[:user_id]) if !!session[:user_id]
     end
@@ -26,5 +25,6 @@ module Admin
     # def records_per_page
     #   params[:per_page] || 20
     # end
+
   end
 end

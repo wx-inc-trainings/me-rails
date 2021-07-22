@@ -98,6 +98,9 @@ RSpec.configure do |config|
 end
 
 require 'webmock/rspec'
+require 'simplecov'
 
 WebMock.disable_net_connect!(allow_localhost: true)
 WebMock.allow_net_connect!(net_http_connect_on_start: true)
+
+SimpleCov.start

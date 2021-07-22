@@ -13,7 +13,7 @@ module Admin
     # actions.
     #
     def find_resource(param)
-       Rent.find(param)
+      Rent.find(param)
     end
 
     # The result of this lookup will be available as `requested_resource`
@@ -42,5 +42,6 @@ module Admin
 
     # See https://administrate-prototype.herokuapp.com/customizing_controller_actions
     # for more information
+
   end
 end
