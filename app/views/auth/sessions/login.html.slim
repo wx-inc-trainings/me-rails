@@ -1,0 +1,19 @@
+.container.my-4
+    .row.justify-content-center
+        .col-md-5
+            .card.border-0.shadow.p-4
+                .card-body
+                    h1.text-center.text-secondary 
+                        | Login for administrate
+                    p 
+                        - if flash[:error]
+                            .alert.alert-danger.text-center[role="alert"]
+                                = flash[:error]
+                    = form_tag '/login'
+                        .form-group.mt-4
+                            = email_field_tag :email, nil, class: "form-control", placeholder: "Email"
+                        .form-group.my-4
+                            = password_field_tag :password, nil, class: "form-control", placeholder: "Password"
+                        .form-group.mt-4
+                            .d-grid.gap-2
+                                = submit_tag 'Login', class: "btn btn-block btn-primary"

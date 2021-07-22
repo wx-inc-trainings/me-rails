@@ -2,6 +2,15 @@ require 'sidekiq/web'
 require 'sidekiq-scheduler/web'
 
 Rails.application.routes.draw do
+  namespace :admin do
+      resources :users
+      resources :books
+      resources :rents
+      resources :book_suggestions
+
+      root to: "users#index"
+  end
+
   namespace :api do
     namespace :v1 do
       resources :open_library, only: :show, param: :isbn
@@ -24,4 +33,8 @@ Rails.application.routes.draw do
 
   mount Sidekiq::Web => '/sidekiq' 
 
+  get '/login', to: 'auth/sessions#login', as: 'auth_login_form'
+  post '/login', to: 'auth/sessions#create', as: 'auth_login'
+
+  get '/401', to: 'page_error#page_401', as: 'page_unauthorize'
 end

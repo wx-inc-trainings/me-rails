@@ -53,7 +53,7 @@ gem 'rack-reducer'
 gem 'friendly_id'
 
 # Authorization
-gem "pundit"
+gem 'pundit'
 
 gem 'sidekiq'
 
@@ -62,6 +62,8 @@ gem 'slim'
 gem 'sidekiq-scheduler'
 
 gem 'rails-i18n'
+
+gem 'administrate'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
