@@ -85,6 +85,7 @@ ActiveRecord::Schema.define(version: 2021_07_19_152301) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "locale", default: "en"
     t.integer "role"
+
     t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
@@ -92,6 +93,4 @@ ActiveRecord::Schema.define(version: 2021_07_19_152301) do
   end
 
   add_foreign_key "book_suggestions", "users"
-  add_foreign_key "rents", "books"
-  add_foreign_key "rents", "users"
 end
