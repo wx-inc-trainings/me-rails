@@ -1,4 +1,4 @@
-require "administrate/base_dashboard"
+require 'administrate/base_dashboard'
 
 class UserDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
@@ -27,7 +27,7 @@ class UserDashboard < Administrate::BaseDashboard
     tokens: Field::String.with_options(searchable: false),
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
-    locale: Field::String,
+    locale: Field::String
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -84,4 +84,5 @@ class UserDashboard < Administrate::BaseDashboard
   # def display_resource(user)
   #   "User ##{user.id}"
   # end
+
 end

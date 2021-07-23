@@ -1,4 +1,4 @@
-require "administrate/base_dashboard"
+require 'administrate/base_dashboard'
 
 class BookDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
@@ -18,7 +18,7 @@ class BookDashboard < Administrate::BaseDashboard
     year: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
-    slug: Field::String,
+    slug: Field::String
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -80,4 +80,5 @@ class BookDashboard < Administrate::BaseDashboard
   # def display_resource(book)
   #   "Book ##{book.id}"
   # end
+
 end

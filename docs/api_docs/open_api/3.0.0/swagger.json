@@ -21,7 +21,7 @@
             "description": "with valid value {}",
             "content": {
               "application/json": {
-                "example": "{\"author\":\"Laquanda Torp\",\"title\":\"When the Green Woods Laugh\",\"genre\":\"Mythopoeia\",\"editor\":\"Gefen Publishing House\",\"year\":\"1469\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"when-the-green-woods-laugh\",\"times_rented\":\"0\"}"
+                "example": "{\"author\":\"Bud Langosh V\",\"title\":\"All the King's Men\",\"genre\":\"Comic/Graphic Novel\",\"editor\":\"Nauka\",\"year\":\"1085\",\"image\":\"https://loremflickr.com/50/60\",\"slug\":\"all-the-king-s-men\",\"times_rented\":0}"
               }
             }
           },
@@ -29,7 +29,7 @@
             "description": "with invalid value {}",
             "content": {
               "application/json": {
-                "example": "{\"error\":\"can't find record with friendly id: \\\"error_necessitatibus\\\"\"}"
+                "example": "{\"error\":\"not record exists\"}"
               }
             }
           }
@@ -50,7 +50,7 @@
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
-              "example": "author=Arlie+Kunde&editor=Atheneum+Books&link=http%3A%2F%2Fwolff.info%2Fkaterine&title=Blithe+Spirit&year=1496"
+              "example": "author=Ulysses+Volkman+I&editor=Gay+Men%27s+Press&link=http%3A%2F%2Fking.biz%2Frossana.murphy&title=Look+Homeward%2C+Angel&year=1320"
             }
           }
         },
@@ -72,10 +72,10 @@
             }
           },
           "422": {
-            "description": "without parameters required {}",
+            "description": "with invalid param user_id {}",
             "content": {
               "application/json": {
-                "example": "{\"error\":{\"title\":[\"can't be blank\"],\"editor\":[\"can't be blank\"],\"link\":[\"is invalid\",\"can't be blank\"],\"year\":[\"is not a number\",\"is too short (minimum is 1 character)\",\"can't be blank\"],\"author\":[\"is invalid\",\"can't be blank\"]}}"
+                "example": "{\"error\":\"User not found\"}"
               }
             }
           },
@@ -83,15 +83,7 @@
             "description": "with invalid param {}",
             "content": {
               "application/json": {
-                "example": "{\"error\":\"found unpermitted parameter: :lorem\"}"
-              }
-            }
-          },
-          "404": {
-            "description": "with invalid param user_id {}",
-            "content": {
-              "application/json": {
-                "example": "{\"error\":\"Couldn't find User with 'id'=a\"}"
+                "example": "{\"error\":\"found unpermitted parameter: lorem\"}"
               }
             }
           }

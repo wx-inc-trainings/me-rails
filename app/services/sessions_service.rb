@@ -1,7 +1,7 @@
-class SessionsService 
+class SessionsService
   require 'httparty'
 
-  LOGIN_BASE_URI = Rails.application.secrets.base_uri + '/auth/sign_in'
+  LOGIN_BASE_URI = "#{Rails.application.secrets.base_uri}/auth/sign_in".freeze
 
   def initialize(email, password)
     @response = login(email, password)
@@ -16,7 +16,9 @@ class SessionsService
   end
 
   private
+
   def login(email, password)
-    HTTParty.post(LOGIN_BASE_URI, body: {email: email, password: password})
+    HTTParty.post(LOGIN_BASE_URI, body: { email: email, password: password })
   end
+
 end

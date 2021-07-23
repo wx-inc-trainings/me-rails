@@ -60,8 +60,8 @@ RSpec.describe Api::V1::BookSuggestionController, type: :controller do
       describe example 'with invalid param user_id' do
         let(:book_suggestion_params) { { user_id: 'a' } }
 
-        it 'responds with 404 status' do
-          expect(response).to have_http_status 404
+        it 'responds with 422 status' do
+          expect(response).to have_http_status 422
         end
 
         it 'response with error json' do
